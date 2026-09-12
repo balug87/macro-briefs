@@ -27,5 +27,6 @@ Weight by movers. Touch every domain. Write cascading impacts.
 - Stack: Next.js + TypeScript
 - Auth: Auth.js, GitHub OAuth, allowlist balug87
 - Host: Vercel now; Railway later for workers/DB
-- UI: NASA Minimalist
-- IA v1: login → latest week → archive
+- UI: NASA Minimalist cream (Designer contract — not dark navy chrome)
+- IA v1: `/login` → `/` latest week → `/briefs` archive → `/briefs/[weekId]`
+- Content: typed weekly JSON (movers, nine domains, four outlooks) — not a markdown blob

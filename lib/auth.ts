@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
 
+// Only these GitHub logins can sign in. Default is the repo owner.
 const allowlist = (process.env.GITHUB_ALLOWLIST || "balug87")
   .split(",")
   .map((s) => s.trim().toLowerCase())

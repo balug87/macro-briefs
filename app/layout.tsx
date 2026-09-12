@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const sans = IBM_Plex_Sans({
+// UI + body face from the Designer contract. Headings use the Helvetica system stack.
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-sans"
-});
-
-const mono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono"
+  weight: ["400", "600", "700"],
+  variable: "--font-source-sans"
 });
 
 export const metadata: Metadata = {
@@ -22,9 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} ${mono.variable} ${sans.className}`}>
-        {children}
-      </body>
+      <body className={`${sourceSans.variable} ${sourceSans.className}`}>{children}</body>
     </html>
   );
 }

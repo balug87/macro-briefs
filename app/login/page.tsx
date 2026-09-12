@@ -1,5 +1,5 @@
 import { Frame } from "@/components/Frame";
-import { signIn, authConfigured, publicPreview } from "@/lib/auth";
+import { authConfigured, publicPreview, signIn } from "@/lib/auth";
 
 export default function LoginPage() {
   async function github() {
@@ -13,8 +13,8 @@ export default function LoginPage() {
         <p className="kicker">Access</p>
         <h1 className="headline">Sign in with GitHub</h1>
         <p className="lede">
-          Allowlist is balug87 plus any login added to GITHUB_ALLOWLIST. This is
-          not a public magazine.
+          Allowlist is balug87 plus any login added to GITHUB_ALLOWLIST. This is not a
+          public magazine.
         </p>
         {authConfigured ? (
           <form action={github}>
