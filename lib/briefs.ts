@@ -121,12 +121,17 @@ export function formatBriefDate(iso: string, timezone = "Europe/Prague"): string
   const hasTime = iso.includes("T");
   const date = new Date(hasTime ? iso : `${iso}T12:00:00`);
   if (Number.isNaN(date.getTime())) return iso;
-  return new Intl.DateTimeFormat("en-GB", {
+  const parts = new Intl.DateTimeFormat("en-GB", {
     day: "numeric",
     month: "short",
     year: "numeric",
     timeZone: timezone
-  }).format(date);
+  }).formatToParts(date);
+  const day = parts.find((part) => part.type === "day")?.value;
+  // Some ICU builds emit "Sept"; keep the 3-letter NASA-style month.
+  const month = parts.find((part) => part.type === "month")?.value?.slice(0, 3);
+  const year = parts.find((part) => part.type === "year")?.value;
+  return `${day} ${month} ${year}`;
 }
 
 export function briefYear(brief: Brief): string {

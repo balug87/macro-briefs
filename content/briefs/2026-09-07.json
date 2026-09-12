@@ -17,7 +17,7 @@
       "label": "Chokepoints disrupted",
       "cause": "World Monitor’s board had Hormuz and Kerch as the hottest scores.",
       "tone": "down",
-      "domain": "logistics"
+      "domain": "war"
     },
     {
       "magnitude": "+3.4%",
