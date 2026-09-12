@@ -294,11 +294,14 @@ h1.headline {
   display: block;
 }
 
+/* Below 1024px: wrap onto two lines so ALL-CAPS labels stay
+   full-width (Designer QA: "NATURAL RESOURCES" must not clip to "NA").
+   Do not use overflow-x: auto — that scrollbar hid the last item at ~720px. */
 .toc {
   display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  overflow: visible;
   border-bottom: 1px solid var(--line);
   margin: 0 0 28px;
   padding: 0 0 2px;
@@ -309,7 +312,9 @@ h1.headline {
 }
 
 .toc a {
+  /* Keep each label on one line as a wrap unit. Never shrink or ellipsize. */
   flex: 0 0 auto;
+  white-space: nowrap;
   color: var(--grey-aa);
   font-size: var(--text-meta);
   letter-spacing: var(--track-meta);
@@ -333,7 +338,8 @@ h1.headline {
 .domain {
   padding: 8px 0 28px;
   border-top: 1px solid var(--line);
-  scroll-margin-top: 56px;
+  /* Two-line sticky TOC is taller than the old single scrolling row. */
+  scroll-margin-top: 96px;
 }
 
 .domain h2 {
@@ -370,7 +376,9 @@ h1.headline {
   }
 
   .toc {
+    /* Designer-approved sticky left rail — column, no wrap, no scrollbar. */
     flex-direction: column;
+    flex-wrap: nowrap;
     overflow: visible;
     position: sticky;
     top: 24px;
