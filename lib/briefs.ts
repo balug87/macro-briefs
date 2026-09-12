@@ -134,7 +134,7 @@ export function briefYear(brief: Brief): string {
 }
 
 // Archive tags: unique domains called out on the top movers, as ALL-CAPS labels.
-export function briefDomainTags(brief: Brief): string[] {
+export function briefDomainTags(brief: Brief): DomainId[] {
   const seen = new Set<DomainId>();
   for (const mover of brief.topMovers) {
     if (mover.domain) seen.add(mover.domain);
