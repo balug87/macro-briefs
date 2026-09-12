@@ -11,10 +11,12 @@ export const authConfigured = Boolean(
   process.env.AUTH_GITHUB_ID && process.env.AUTH_GITHUB_SECRET
 );
 
-export const publicPreview = process.env.PUBLIC_PREVIEW === "1" || !authConfigured;
+// Preview mode is an explicit opt-in only. It must never be inferred from
+// missing OAuth config, or a dropped env var would silently unpublish the gate.
+export const publicPreview = process.env.PUBLIC_PREVIEW === "1";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  secret: process.env.AUTH_SECRET || "preview-only-replace-on-vercel",
+  secret: process.env.AUTH_SECRET,
   trustHost: true,
   providers: [
     GitHub({
