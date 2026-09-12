@@ -1,0 +1,197 @@
+{
+  "weekId": "2026-09-07",
+  "title": "Oil shock meets a live G10 tightening cycle",
+  "published": "2026-09-11",
+  "timezone": "Europe/Prague",
+  "weekLabel": "7–13 Sep 2026",
+  "topMovers": [
+    {
+      "magnitude": "$110",
+      "label": "Brent intraweek",
+      "cause": "Four-month high on Hormuz and Red Sea disruption before a fade toward $106.",
+      "tone": "up",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "7/13",
+      "label": "Chokepoints disrupted",
+      "cause": "World Monitor’s board had Hormuz and Kerch as the hottest scores.",
+      "tone": "down",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "+3.4%",
+      "label": "US headline CPI",
+      "cause": "August in line; core +0.3% m/m vs 0.2% expected kept a September hike live.",
+      "tone": "watch",
+      "domain": "public_policy"
+    },
+    {
+      "magnitude": "$6+",
+      "label": "US diesel",
+      "cause": "Distillates, not WTI ticks, are the inflation path into food and freight.",
+      "tone": "up",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "+25 bp",
+      "label": "FOMC hike odds",
+      "cause": "Warsh tone plus the jobs beat pushed FedWatch into the 80s for 16 Sep.",
+      "tone": "watch",
+      "domain": "public_policy"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Base of the week is a war premium on crude and a record-ish diesel print, with European gas storage poor for the date. Nat gas on World Monitor’s 9 Sep pulse was the weak sleeve (−1.2%), which is a US-hub story, not Europe. Distillates and chokepoints matter more than WTI ticks.",
+      "cascadingImpacts": [
+        "War → chokepoints → crude/diesel → headline CPI"
+      ],
+      "bullets": [
+        "Brent tagged near $110 intraweek, then faded toward $106.",
+        "US diesel printed above $6/gallon on the morning wires.",
+        "European gas storage is tight into winter; US hub gas is the soft sleeve."
+      ]
+    },
+    "ai": {
+      "summary": "World Monitor’s tech sibling exists for infra mapping. No model-release or power-cap event dominated the geopolitics dashboard this week. Power and diesel for data centers are the cascade from energy, not the other way around — yet.",
+      "cascadingImpacts": [
+        "Energy tax → power cost → AI infra pace"
+      ],
+      "bullets": [
+        "No verified model-release headline on the geopolitics board.",
+        "Constraint is power and diesel, not ideas."
+      ]
+    },
+    "war": {
+      "summary": "US–Iran at sea, Houthis opening a Yemen port front, Ukraine still the highest instability score on the board (UA 84). Nuclear-risk explainers are back in the OSINT stream. This is the constraint set for oil, grain, and insurance — not a separate geopolitics column.",
+      "cascadingImpacts": [
+        "US–Iran + Houthis → Hormuz/Red Sea → insurance and ships"
+      ],
+      "bullets": [
+        "IRGC strikes on shipping in Hormuz; Houthis holding Mocha.",
+        "Yemen violence wired back into the US–Iran war.",
+        "Ukraine remains the highest instability score (UA 84)."
+      ]
+    },
+    "food": {
+      "summary": "No new FAO-grade print in this week’s public tape. Transmission path is freight + diesel + Black Sea/Red Sea insurance, not a harvest headline. Keep the domain on the page so a quiet week stays visible.",
+      "cascadingImpacts": [
+        "Diesel + insurance → food inflation with a lag"
+      ],
+      "bullets": [
+        "No harvest headline moved the public tape.",
+        "Quiet week still belongs on the page."
+      ]
+    },
+    "transport": {
+      "summary": "Civil and military aviation layers on the dashboard are the other half of the same corridor story as the ships. Delayed boxes and war-risk premia sit on the same map as Hormuz, Bab el-Mandeb, and Suez.",
+      "cascadingImpacts": [
+        "Chokepoints → ships and aviation → delayed boxes"
+      ],
+      "bullets": [
+        "Hormuz, Bab el-Mandeb, and Suez all scored disrupted.",
+        "Aviation layers track the same corridor as maritime risk."
+      ]
+    },
+    "logistics": {
+      "summary": "Tanker risk, refined-product cracks, and 7 of 13 chokepoints disrupted. That is ships, war-risk premia, and delayed boxes — then food and diesel. Logistics is the wire between war and the CPI print.",
+      "cascadingImpacts": [
+        "Tanker risk → refined cracks → freight inflation"
+      ],
+      "bullets": [
+        "7 of 13 chokepoints disrupted on the public board.",
+        "Hormuz and Kerch posted the hottest scores."
+      ]
+    },
+    "demographics": {
+      "summary": "No new UN or major census print this week. Labor only showed up as the US jobs beat that helped reprice the Fed. Structural ageing and migration stay in the 2y/5y box until a print moves.",
+      "cascadingImpacts": [
+        "Jobs beat → Fed odds → front-end yields"
+      ],
+      "bullets": [
+        "August payrolls +162k vs ~55k expected; unemployment 4.1%.",
+        "Ageing and migration stay in the longer horizons until a print moves."
+      ]
+    },
+    "public_policy": {
+      "summary": "FOMC 15–16 Sep is the event. ECB already hiked (second of 2026); BoJ is live 18 Sep. G10 tightening into an oil shock is the policy regime. Chair Warsh’s Jackson Hole tone plus the jobs beat had already lifted September odds; CPI pushed FedWatch into the 80s for +25 bp.",
+      "cascadingImpacts": [
+        "CPI + Warsh tone → FOMC path → front-end yields · dollar"
+      ],
+      "bullets": [
+        "Fed funds still 3.50–3.75% after a year of holds.",
+        "Headline CPI +0.4% m/m, +3.4% y/y; core +2.4% y/y.",
+        "JPMorgan desk color: eight of nine DM central banks hike by year-end."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold firm on the geopolitical bid and real-yield fight. Copper soft on the 9 Sep pulse. Stockpile and extraction data were not in the public World Monitor panels used for this dry run — flag for Pro / commodity sibling next Sunday. Mining-tech: no verified process breakthrough this week.",
+      "cascadingImpacts": [
+        "War bid → gold · copper offered → mineral-security capex"
+      ],
+      "bullets": [
+        "Gold held the $4,300–4,400 area.",
+        "Copper was offered on the 9 Sep pulse.",
+        "Public dashboard did not yield a clean inventory series."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "25 bp Fed hike on 16 Sep.",
+        "BoJ hikes on 18 Sep.",
+        "Oil stays three digits while the Strait is contested.",
+        "Risk assets chop after the Friday bounce."
+      ],
+      "risks": [
+        "A hold after 80%+ odds — front-end rally, dollar dip, Warsh credibility hit.",
+        "Hormuz closed for more than a news cycle — diesel and Europe gas, not just Brent.",
+        "Equities treat an in-line headline as the cascade. It is not."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Shallow G10 tightening finishes.",
+        "Oil war premium fades only if a ceasefire or a secure corridor appears.",
+        "Core inflation does not make a clean run at 2%.",
+        "Growth slows from the energy tax, not a 2020-style collapse."
+      ],
+      "risks": [
+        "Second-round inflation in services if diesel and food stick.",
+        "Europe winter gas if storage and LNG routing stay ugly.",
+        "Policy error either way — too slow on headline, too fast on labor."
+      ]
+    },
+    "2y": {
+      "base": [
+        "2026 oil/war shock remembered as a mid-cycle supply break.",
+        "Policy stays higher for longer than the 2025 narrative wanted.",
+        "Capex gravitates to energy, grids, and secured minerals.",
+        "AI infra remains power-constrained, not idea-constrained."
+      ],
+      "risks": [
+        "A real recession if tightening and oil run together.",
+        "A frozen conflict that institutionalizes $80–110 oil as the normal band.",
+        "Trade rewires around the Cape for years, not weeks."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Chokepoint politics and mineral security become standing features.",
+        "Demographics and public debt cap any 1970s policy replay.",
+        "Mining and refining capacity, not ore in the ground, set the resource constraint."
+      ],
+      "risks": [
+        "A wider great-power war that takes the dashboard off monitor.",
+        "A clean peace plus productivity burst that collapses the war premium.",
+        "This brief would then look hawkish in hindsight."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "War → chokepoints → crude/diesel → headline CPI · inflation expectations → FOMC/ECB/BoJ path",
+    "Policy path → front-end yields · dollar → freight and food inflation with a lag"
+  ]
+}

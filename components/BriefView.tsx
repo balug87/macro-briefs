@@ -1,39 +1,30 @@
-import type { Brief } from "@/lib/briefs";
-import { renderMarkdown } from "@/lib/briefs";
+import { CascadingImpacts } from "@/components/CascadingImpacts";
+import { DomainSweep } from "@/components/DomainSweep";
+import { Outlooks } from "@/components/Outlooks";
+import { TopMovers } from "@/components/TopMovers";
+import { allCascadingImpacts, formatBriefDate } from "@/lib/briefs";
+import type { Brief } from "@/lib/types";
 
+// Full Sunday drop: thesis, movers, nine-domain sweep, cascades, four-horizon outlook.
 export function BriefView({ brief }: { brief: Brief }) {
+  const timezone = brief.timezone || "Europe/Prague";
+  const published = formatBriefDate(brief.published, timezone);
+
   return (
     <article>
-      <p className="kicker">Weekly world monitor · {brief.weekOf}</p>
+      <p className="kicker">
+        Weekly world monitor
+        {brief.weekLabel ? ` · ${brief.weekLabel}` : ""}
+        {` · ${timezone.replace("_", " ")}`}
+      </p>
       <h1 className="headline">{brief.title}</h1>
-      {brief.lede ? <p className="lede">{brief.lede}</p> : null}
-      <dl className="meta">
-        <div>
-          <dt>Published</dt>
-          <dd>{brief.published}</dd>
-        </div>
-        <div>
-          <dt>Horizons</dt>
-          <dd>{brief.horizon}</dd>
-        </div>
-        <div>
-          <dt>Frame</dt>
-          <dd>Base case + key risks</dd>
-        </div>
-      </dl>
-      {brief.movers.length ? (
-        <div className="movers">
-          {brief.movers.map((m) => (
-            <span className="chip" key={m}>
-              {m}
-            </span>
-          ))}
-        </div>
-      ) : null}
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{ __html: renderMarkdown(brief.body) }}
-      />
+      <p className="meta-line">
+        Published {published} · Sunday 09:00 · Base case + key risks
+      </p>
+      <TopMovers movers={brief.topMovers} />
+      <DomainSweep brief={brief} />
+      <CascadingImpacts lines={allCascadingImpacts(brief)} />
+      <Outlooks brief={brief} />
     </article>
   );
 }

@@ -1,165 +1,154 @@
 import fs from "node:fs";
 import path from "node:path";
+import {
+  DOMAIN_IDS,
+  HORIZON_IDS,
+  type Brief,
+  type DomainId,
+  type DomainSection,
+  type HorizonId,
+  type Outlook,
+  type TopMover
+} from "@/lib/types";
 
-export type BriefMeta = {
-  slug: string;
-  title: string;
-  weekOf: string;
-  published: string;
-  horizon: string;
-  lede: string;
-  movers: string[];
-};
-
-export type Brief = BriefMeta & {
-  body: string;
-};
-
+// All Sunday drops live here as one JSON file per week.
 const DIR = path.join(process.cwd(), "content", "briefs");
 
-function parseFrontmatter(raw: string): { data: Record<string, string | string[]>; body: string } {
-  if (!raw.startsWith("---")) return { data: {}, body: raw };
-  const end = raw.indexOf("\n---", 3);
-  if (end === -1) return { data: {}, body: raw };
-  const fm = raw.slice(4, end).trim();
-  const body = raw.slice(end + 4).replace(/^\s+/, "");
-  const data: Record<string, string | string[]> = {};
-  for (const line of fm.split("\n")) {
-    const i = line.indexOf(":");
-    if (i === -1) continue;
-    const key = line.slice(0, i).trim();
-    let val = line.slice(i + 1).trim();
-    if (val.startsWith("[") && val.endsWith("]")) {
-      data[key] = val
-        .slice(1, -1)
-        .split(",")
-        .map((s) => s.trim().replace(/^["']|["']$/g, ""))
-        .filter(Boolean);
-    } else {
-      data[key] = val.replace(/^["']|["']$/g, "");
-    }
-  }
-  return { data, body };
+function asString(value: unknown, fallback = ""): string {
+  return typeof value === "string" ? value : fallback;
 }
 
-export function listBriefs(): BriefMeta[] {
+function asStringArray(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((item): item is string => typeof item === "string");
+}
+
+// Turn loose JSON into a typed Brief so a bad week file fails loudly.
+function parseBrief(raw: unknown, fallbackWeekId: string): Brief {
+  const data = raw && typeof raw === "object" ? (raw as Record<string, unknown>) : {};
+  const weekId = asString(data.weekId, fallbackWeekId);
+
+  const topMovers: TopMover[] = Array.isArray(data.topMovers)
+    ? data.topMovers.slice(0, 5).map((item) => {
+        const mover = item && typeof item === "object" ? (item as Record<string, unknown>) : {};
+        const tone = mover.tone;
+        return {
+          magnitude: asString(mover.magnitude) || undefined,
+          label: asString(mover.label, "Untitled mover"),
+          cause: asString(mover.cause),
+          tone: tone === "up" || tone === "down" || tone === "watch" ? tone : undefined,
+          domain: DOMAIN_IDS.includes(mover.domain as DomainId)
+            ? (mover.domain as DomainId)
+            : undefined
+        };
+      })
+    : [];
+
+  const rawDomains =
+    data.domains && typeof data.domains === "object"
+      ? (data.domains as Record<string, unknown>)
+      : {};
+
+  const domains = {} as Record<DomainId, DomainSection>;
+  for (const id of DOMAIN_IDS) {
+    const block =
+      rawDomains[id] && typeof rawDomains[id] === "object"
+        ? (rawDomains[id] as Record<string, unknown>)
+        : {};
+    domains[id] = {
+      summary: asString(block.summary),
+      cascadingImpacts: asStringArray(block.cascadingImpacts),
+      bullets: asStringArray(block.bullets)
+    };
+  }
+
+  const rawOutlooks =
+    data.outlooks && typeof data.outlooks === "object"
+      ? (data.outlooks as Record<string, unknown>)
+      : {};
+
+  const outlooks = {} as Record<HorizonId, Outlook>;
+  for (const id of HORIZON_IDS) {
+    const block =
+      rawOutlooks[id] && typeof rawOutlooks[id] === "object"
+        ? (rawOutlooks[id] as Record<string, unknown>)
+        : {};
+    outlooks[id] = {
+      base: asStringArray(block.base),
+      risks: asStringArray(block.risks)
+    };
+  }
+
+  return {
+    weekId,
+    title: asString(data.title, weekId),
+    published: asString(data.published, weekId),
+    timezone: asString(data.timezone) || undefined,
+    weekLabel: asString(data.weekLabel) || undefined,
+    topMovers,
+    domains,
+    outlooks,
+    cascadingImpacts: asStringArray(data.cascadingImpacts)
+  };
+}
+
+export function listBriefs(): Brief[] {
   if (!fs.existsSync(DIR)) return [];
   return fs
     .readdirSync(DIR)
-    .filter((f) => f.endsWith(".md"))
+    .filter((file) => file.endsWith(".json"))
     .map((file) => {
-      const raw = fs.readFileSync(path.join(DIR, file), "utf8");
-      const { data } = parseFrontmatter(raw);
-      const slug = file.replace(/\.md$/, "");
-      return {
-        slug,
-        title: String(data.title || slug),
-        weekOf: String(data.weekOf || slug),
-        published: String(data.published || slug),
-        horizon: String(data.horizon || "1m · 6m · 2y · 5y"),
-        lede: String(data.lede || ""),
-        movers: Array.isArray(data.movers) ? data.movers : []
-      };
+      const weekId = file.replace(/\.json$/, "");
+      const raw = JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8"));
+      return parseBrief(raw, weekId);
     })
     .sort((a, b) => (a.published < b.published ? 1 : -1));
 }
 
-export function getBrief(slug: string): Brief | null {
-  const file = path.join(DIR, `${slug}.md`);
+export function getBrief(weekId: string): Brief | null {
+  const file = path.join(DIR, `${weekId}.json`);
   if (!fs.existsSync(file)) return null;
-  const raw = fs.readFileSync(file, "utf8");
-  const { data, body } = parseFrontmatter(raw);
-  return {
-    slug,
-    title: String(data.title || slug),
-    weekOf: String(data.weekOf || slug),
-    published: String(data.published || slug),
-    horizon: String(data.horizon || "1m · 6m · 2y · 5y"),
-    lede: String(data.lede || ""),
-    movers: Array.isArray(data.movers) ? data.movers : [],
-    body
-  };
+  const raw = JSON.parse(fs.readFileSync(file, "utf8"));
+  return parseBrief(raw, weekId);
 }
 
 export function latestBrief(): Brief | null {
-  const first = listBriefs()[0];
-  return first ? getBrief(first.slug) : null;
+  return listBriefs()[0] ?? null;
 }
 
-export function renderMarkdown(md: string): string {
-  const escaped = md
-    .replace(/&/g, "&")
-    .replace(/</g, "<")
-    .replace(/>/g, ">");
+// Format a YYYY-MM-DD (or ISO) date the way archive rows and mastheads show it.
+export function formatBriefDate(iso: string, timezone = "Europe/Prague"): string {
+  const hasTime = iso.includes("T");
+  const date = new Date(hasTime ? iso : `${iso}T12:00:00`);
+  if (Number.isNaN(date.getTime())) return iso;
+  return new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: timezone
+  }).format(date);
+}
 
-  const lines = escaped.split("\n");
-  const out: string[] = [];
-  let inList = false;
-  let inTable = false;
+export function briefYear(brief: Brief): string {
+  return brief.published.slice(0, 4);
+}
 
-  const flushList = () => {
-    if (inList) {
-      out.push("</ul>");
-      inList = false;
-    }
-  };
-  const flushTable = () => {
-    if (inTable) {
-      out.push("</tbody></table>");
-      inTable = false;
-    }
-  };
+// Archive tags: unique domains called out on the top movers, as ALL-CAPS labels.
+export function briefDomainTags(brief: Brief): string[] {
+  const seen = new Set<DomainId>();
+  for (const mover of brief.topMovers) {
+    if (mover.domain) seen.add(mover.domain);
+  }
+  return [...seen];
+}
 
-  const inline = (s: string) =>
-    s
-      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-      .replace(/\*(.+?)\*/g, "<em>$1</em>")
-      .replace(
-        /\[([^\]]+)\]\((https?:[^)]+)\)/g,
-        '<a href="$2" target="_blank" rel="noreferrer">$1</a>'
-      );
-
-  for (const line of lines) {
-    if (line.startsWith("|")) {
-      flushList();
-      const cells = line
-        .split("|")
-        .slice(1, -1)
-        .map((c) => c.trim());
-      if (cells.every((c) => /^[-:]+$/.test(c))) continue;
-      if (!inTable) {
-        out.push("<table><thead><tr>" + cells.map((c) => `<th>${inline(c)}</th>`).join("") + "</tr></thead><tbody>");
-        inTable = true;
-      } else {
-        out.push("<tr>" + cells.map((c) => `<td>${inline(c)}</td>`).join("") + "</tr>");
-      }
-      continue;
-    }
-    flushTable();
-
-    if (line.startsWith("### ")) {
-      flushList();
-      out.push(`<h3>${inline(line.slice(4))}</h3>`);
-    } else if (line.startsWith("## ")) {
-      flushList();
-      out.push(`<h2>${inline(line.slice(3))}</h2>`);
-    } else if (line.startsWith("# ")) {
-      flushList();
-      out.push(`<h1>${inline(line.slice(2))}</h1>`);
-    } else if (line.startsWith("- ")) {
-      if (!inList) {
-        out.push("<ul>");
-        inList = true;
-      }
-      out.push(`<li>${inline(line.slice(2))}</li>`);
-    } else if (line.trim() === "") {
-      flushList();
-    } else {
-      flushList();
-      out.push(`<p>${inline(line)}</p>`);
+// Flatten week-level + per-domain cascade lines for the compact A → B → C block.
+export function allCascadingImpacts(brief: Brief): string[] {
+  const lines = [...(brief.cascadingImpacts ?? [])];
+  for (const id of DOMAIN_IDS) {
+    for (const line of brief.domains[id].cascadingImpacts) {
+      if (!lines.includes(line)) lines.push(line);
     }
   }
-  flushList();
-  flushTable();
-  return out.join("\n");
+  return lines;
 }
