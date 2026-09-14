@@ -1,0 +1,197 @@
+{
+  "weekId": "2026-09-13",
+  "title": "Hormuz war premium holds oil near $100 into FOMC week",
+  "published": "2026-09-13",
+  "timezone": "Europe/Prague",
+  "weekLabel": "13–19 Sep 2026",
+  "topMovers": [
+    {
+      "magnitude": "$99.45",
+      "label": "Brent (WM quotes)",
+      "cause": "World Monitor Sep 9 pulse: Brent +1.56% to $99.45 with Hormuz shipping under US–Iran war pressure; WTI $94.31.",
+      "tone": "up",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "7/13",
+      "label": "Chokepoints disrupted",
+      "cause": "Yellow+Red on WM board: Hormuz and Kerch at 70 (Red), Suez 50 (Red); Bab el-Mandeb still Yellow.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "UA 84",
+      "label": "Ukraine instability",
+      "cause": "Highest Critical score on the Sep 9 country pulse (trend Falling −6); Russia High at 77.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "IR 73",
+      "label": "Iran instability",
+      "cause": "High band, Rising +4 as Hormuz shipping halts and US reports destroying Iranian oil carriers after missile attacks.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "$4,442",
+      "label": "Gold",
+      "cause": "WM quote panel held the geo bid; copper offered (−0.59% to $6.78).",
+      "tone": "watch",
+      "domain": "natural_resources"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Grounded in World Monitor’s Sep 9 crawlable pulse (latest published snapshot as of Sunday 13 Sep; live MCP/API still needs Balu’s WM auth). Brent $99.45 (+1.56%), WTI $94.31 (+1.38%), US hub nat gas soft (−1.2% to $2.88). The premium is Hormuz and Gulf security, not a US gas story. Distillate retail prints were not in the public quote panel.",
+      "cascadingImpacts": [
+        "US–Iran / Hormuz → crude premium → headline inflation path"
+      ],
+      "bullets": [
+        "Brent $99.45 and WTI $94.31 on the Sep 9 WM quote panel.",
+        "Hormuz disruption 70/100 (Red); week-over-week transit movement −14.3% where published.",
+        "Saudi energy-site Houthi strike headlines in the country feed; UAE says exports will not be ‘held hostage’."
+      ]
+    },
+    "ai": {
+      "summary": "No model-release event dominated the geopolitics pulse. JP feed flagged a stronger-yen risk for AI/tech stocks. Binding constraint remains power and war-risk energy costs for infra, not ideas.",
+      "cascadingImpacts": [
+        "Energy tax → power cost → AI infra pace"
+      ],
+      "bullets": [
+        "No verified model-release headline on the Sep 9 geopolitics board.",
+        "MarketWatch item in JP developments: stronger yen as a headwind for AI/tech equities."
+      ]
+    },
+    "war": {
+      "summary": "US–Iran war over Hormuz is the hot sleeve: Iran targets US forces in Jordan and ships in Hormuz; US says it destroyed five Iranian oil carriers after missile attacks. Ukraine stays Critical (UA 84). Yemen High (74) with Houthi/Iran-backed Gulf threat copy. UK/EU/Canada settlement sanctions hit Israel (IL 56, Falling −14).",
+      "cascadingImpacts": [
+        "US–Iran + Houthis → Hormuz/Red Sea → insurance and ships"
+      ],
+      "bullets": [
+        "Hormuz and Kerch both 70 Red; Suez 50 Red on the public chokepoint table.",
+        "Ukraine Critical 84; Iran High 73 Rising +4; Russia High 77.",
+        "Red Sea tracker: Yemen 816 events / 578 fatalities in the Aug HAPI/HDX month pulse."
+      ]
+    },
+    "food": {
+      "summary": "No FAO index print in the public pulse quotes. Transmission is still freight + war-risk insurance via Kerch (Azov grain) and Red Sea/Suez, not a harvest headline.",
+      "cascadingImpacts": [
+        "Kerch/Red Sea risk → grain and food freight with a lag"
+      ],
+      "bullets": [
+        "Kerch Strait −100% week-over-week movement on the published pulse; Azov grain route constrained.",
+        "No FAO-grade print in the Sep 9 quote panel."
+      ]
+    },
+    "transport": {
+      "summary": "Aviation and maritime sit on the same corridor map. UAE feed: Dubai/Abu Dhabi flight cancellations after Heathrow outage and fresh Iran strikes. Chokepoint board is the other half of delayed boxes.",
+      "cascadingImpacts": [
+        "Chokepoints + Gulf strikes → ships and aviation → delayed boxes"
+      ],
+      "bullets": [
+        "7 of 13 chokepoints Yellow or Red on the Sep 9 public snapshot.",
+        "UAE headlines tied flight disruption to Iran strikes and a Heathrow outage."
+      ]
+    },
+    "logistics": {
+      "summary": "Logistics is the wire between war and prices: Hormuz/Kerch/Suez red, Bab el-Mandeb yellow, Cape congestion High as an alternate. Transit counts missing on several Red straits (partial coverage), so scores are pressure signals, not closure certificates.",
+      "cascadingImpacts": [
+        "Tanker/war-risk → freight inflation → CPI with a lag"
+      ],
+      "bullets": [
+        "Hormuz −14.3% and Bab el-Mandeb −10.7% week-over-week movement where published.",
+        "Cape of Good Hope congestion High on the same snapshot."
+      ]
+    },
+    "demographics": {
+      "summary": "No new UN/census print in the pulse. Displacement and labor stay in longer horizons until a WM demographics or UNHCR panel moves. Structural ageing unchanged.",
+      "cascadingImpacts": [
+        "Displacement / labor → policy and growth capacity on 2y–5y"
+      ],
+      "bullets": [
+        "No fresh demographics series in the Sep 9 crawlable pulse.",
+        "Sudan crisis page still shows a severe fatality pulse (1,064 in the Aug HAPI/HDX month) — humanitarian, not a labor print."
+      ]
+    },
+    "public_policy": {
+      "summary": "Geopolitics board this week is war + trade policy, not a fresh CPI table: Trump escalates Canada tariffs/bans; UK/EU/Canada sanction Israeli settlement trade. German inflation rose with few energy-shock spillover signs (DE feed). FOMC 15–16 Sep remains the calendar event from the prior brief’s regime — not re-quoted on this pulse. Live FedWatch/CPI panels need authenticated WM access.",
+      "cascadingImpacts": [
+        "War premium + tariffs → inflation expectations → G10 policy path"
+      ],
+      "bullets": [
+        "US–Canada tariff/ban escalation on the Sep 9 US developments feed.",
+        "UK + eleven European countries and Canada: settlement-product sanctions on Israel.",
+        "Authenticated WM MCP/API not connected this run — no fresh FedWatch print pulled."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold $4,442.2 (+0.07%) on the geo bid; copper $6.7835 (−0.59%). Public pulse did not publish stockpile/extraction series. Mining-tech: no verified process breakthrough in the geopolitics digest.",
+      "cascadingImpacts": [
+        "War bid → gold · copper offered → mineral-security capex"
+      ],
+      "bullets": [
+        "Gold $4,442.2; copper offered on the Sep 9 quote panel.",
+        "China–Australia iron-ore trade war item in CN developments.",
+        "Inventory/extraction series still need Pro/commodity sibling or MCP auth."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Hormuz stays contested; Brent holds a three-digit neighborhood while Red scores persist.",
+        "FOMC 15–16 Sep is the near policy event; G10 still in a war-premium inflation regime.",
+        "Ukraine stays Critical on the instability board.",
+        "Risk assets chop around war headlines and the Fed meeting."
+      ],
+      "risks": [
+        "Hormuz closure or mine scare lasting more than a news cycle — diesel and Europe gas, not just Brent.",
+        "Policy surprise at FOMC if live CPI/FedWatch (not in this pulse) has shifted.",
+        "Secondary Houthi hits on Saudi energy sites widen the Gulf premium."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Oil war premium fades only with a secure Hormuz corridor or ceasefire.",
+        "Trade rewiring via the Cape stays a freight cost, not a one-week detour.",
+        "Core inflation does not make a clean run at 2% while energy and tariffs bite.",
+        "Growth slows from the energy tax more than from a 2020-style collapse."
+      ],
+      "risks": [
+        "Second-round inflation if food freight and diesel stick.",
+        "Europe winter gas if LNG routing around contested corridors stays ugly.",
+        "Policy error — too slow on headline war inflation, too fast on labor."
+      ]
+    },
+    "2y": {
+      "base": [
+        "2026 Hormuz/US–Iran shock remembered as a mid-cycle supply break.",
+        "Capex gravitates to energy, grids, and secured minerals.",
+        "AI infra remains power-constrained.",
+        "Chokepoint politics stay on the standing risk board."
+      ],
+      "risks": [
+        "Real recession if tightening and oil run together.",
+        "Frozen Gulf conflict that institutionalizes high-$80s to ~$100+ oil as normal.",
+        "Trade around the Cape for years, not weeks."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Chokepoint politics and mineral security become standing features.",
+        "Demographics and public debt cap any 1970s policy replay.",
+        "Mining and refining capacity, not ore in the ground, set the resource constraint."
+      ],
+      "risks": [
+        "A wider great-power war that takes the dashboard off monitor.",
+        "A clean peace plus productivity burst that collapses the war premium.",
+        "This brief would then look hawkish in hindsight."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "US–Iran war → Hormuz/Kerch/Suez disruption → crude premium → headline CPI · inflation expectations → G10 policy path",
+    "Tariffs + settlement sanctions → trade friction → freight and food inflation with a lag"
+  ]
+}
