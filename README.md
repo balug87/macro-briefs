@@ -104,7 +104,27 @@ Required fields:
 - `domains`: all nine keys (`energy`, `ai`, `war`, `food`, `transport`, `logistics`, `demographics`, `public_policy`, `natural_resources`) with `summary`, `cascadingImpacts`, optional `bullets`
 - `outlooks`: `1m`, `6m`, `2y`, `5y` each with `base` and `risks` arrays (3–5 short bullets)
 
-Copy `content/briefs/2026-09-07.json` to start a new Sunday.
+Copy `content/briefs/2026-09-07.json` (or `2026-09-13.json`) to start a new Sunday.
+
+**Do not open a PR for the JSON.** Sunday drops commit straight to `main`. See [Sunday brief publish](#sunday-brief-publish-macro-research) below.
+
+## Sunday brief publish (Macro Research)
+
+Weekly JSON under `content/briefs/` is news/data, not code. Sunday publishes go **straight to `main`** (no PR). Vercel production redeploys from `main`; the live site is [https://macro-briefs.vercel.app](https://macro-briefs.vercel.app).
+
+- Filename: `content/briefs/YYYY-MM-DD.json` where `YYYY-MM-DD` is the Sunday `weekId` (Europe/Prague). It must match the `weekId` field inside the JSON.
+- Prefer a direct commit to `main` via the GitHub Contents API (`gh api`). Create the file with PUT; for updates, GET the file first for `sha`, then PUT with `sha`.
+- Keep PRs for **app/code** changes only. Auto-merge for those PRs is already handled outside this repo.
+
+Full commands (create + update) live in [`docs/PUBLISH.md`](docs/PUBLISH.md). Short create example:
+
+```bash
+PATH=content/briefs/YYYY-MM-DD.json
+gh api --method PUT "repos/balug87/macro-briefs/contents/$PATH" \
+  -f message="Brief: YYYY-MM-DD" \
+  -f content="$(base64 -w0 edition.json)" \
+  -f branch=main
+```
 
 ## UI
 
