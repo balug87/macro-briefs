@@ -1,0 +1,197 @@
+{
+  "weekId": "2026-09-20",
+  "title": "Hormuz stays Red at 70 while Brent eases to $99 and Ukraine hits 86",
+  "published": "2026-09-20",
+  "timezone": "Europe/Prague",
+  "weekLabel": "20–26 Sep 2026",
+  "topMovers": [
+    {
+      "magnitude": "$99.29",
+      "label": "Brent (WM quotes)",
+      "cause": "World Monitor Sep 19 pulse: Brent −0.64% to $99.29; WTI $96.08 (−1.18%). SA feed: oil fell a third day as Saudi supply disruptions looked less severe than feared — premium holds, not a clean unwind.",
+      "tone": "watch",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "70/70",
+      "label": "Hormuz + Kerch Red",
+      "cause": "Both still 70 Red on the Sep 19 chokepoint board. Hormuz transit WoW +68.2% (recovery in counts, score unchanged); Kerch −100% WoW with Azov grain still constrained.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "UA 86",
+      "label": "Ukraine instability",
+      "cause": "Critical band, Rising +2 vs Sep 9’s 84 Falling −6. Ukraine-war crisis pulse (Sep month): 5,453 events / 2,222 fatalities.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "Suez 35",
+      "label": "Suez Yellow (was Red)",
+      "cause": "Disruption score 50 Red on Sep 9 → 35 Yellow on Sep 19 (−8.9% WoW movement). Still 7 of 13 chokepoints Yellow or Red.",
+      "tone": "up",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "Signed",
+      "label": "US Russia sanctions bill",
+      "cause": "Pulse headlines and RU/UA/CN feeds: Trump signs broad Russia sanctions bill; Nikkei notes tariff exposure for China and India over Russian oil.",
+      "tone": "watch",
+      "domain": "public_policy"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Grounded in World Monitor’s Sep 19 crawlable pulse (capturedAt 2026-09-19; quotesAsOf 03:51 UTC; live MCP/API still needs Balu’s WM API key). Brent $99.29 (−0.64%), WTI $96.08 (−1.18%), US hub nat gas $2.912 (+0.38%). Sparkline shows WTI off ~$101 earlier in the window. SA developments: third straight down-day as Saudi disruption fears cooled; Macron called for another emergency oil release; Saudi October Europe crude cuts also in the energy feed. Hormuz stays the constraint — score 70 Red even with transit WoW +68.2%.",
+      "cascadingImpacts": [
+        "Hormuz Red + Gulf war → crude premium → headline inflation path"
+      ],
+      "bullets": [
+        "Brent $99.29 and WTI $96.08 on the Sep 19 WM quote panel.",
+        "Hormuz disruption 70/100 (Red); week-over-week transit movement +68.2% where published.",
+        "SA feed: oil softer as Saudi supply disruption looks less severe than feared."
+      ]
+    },
+    "ai": {
+      "summary": "No model-release event dominated the geopolitics pulse. Binding AI-adjacent items on the board: JP–US chip-factory talks under the tariff deal; UK Sovereign AI Fund talk of a £500m drug-discovery raise; CN feed on a faulty AI report that ‘almost started a war’ between US and China. Power and war-risk energy costs remain the cascade into infra, not a fresh GPU headline.",
+      "cascadingImpacts": [
+        "Energy tax → power cost → AI infra pace"
+      ],
+      "bullets": [
+        "Japan–US chip-factory talks in the JP developments feed (Nikkei).",
+        "UK Sovereign AI Fund item in the GB feed; no verified frontier-model launch on the geopolitics board."
+      ]
+    },
+    "war": {
+      "summary": "Two hot sleeves: Ukraine Critical at 86 (Rising +2) with a heavy Sep HAPI month pulse, and Iran–Hormuz still Red at 70 while IR instability eased to 67 High (Rising +4). Pulse headlines and IR feed: Iran war still spreads across shipping chokepoints; tanker one-day millionaires on Hormuz runs. YE down to 60 Elevated (from 74 High on Sep 9) but Houthis and Saudi strikes stay in the Yemen feed. RU 76 High; Trump signed the Russia sanctions bill. Greenland security deal with Denmark lands as a US strategic headline, not a theater score change.",
+      "cascadingImpacts": [
+        "US–Iran/Hormuz + Ukraine → Red chokepoints → insurance and ships"
+      ],
+      "bullets": [
+        "Hormuz and Kerch both 70 Red; Suez eased to 35 Yellow; Bab el-Mandeb 40 Yellow.",
+        "Ukraine Critical 86 Rising +2; Iran High 67; Russia High 76; Yemen Elevated 60.",
+        "Ukraine-war tracker: 5,453 events / 2,222 fatalities in the Sep 2026 HAPI month pulse; Hormuz–Gulf security 527 / 251; Red Sea 659 / 960."
+      ]
+    },
+    "food": {
+      "summary": "No FAO index print in the public quote panel. Transmission stays freight + war-risk via Kerch (Azov grain, −100% WoW) and Red Sea / Bab el-Mandeb, not a harvest headline. UAE organic-waste / food-security plant item is local capacity, not a global price print.",
+      "cascadingImpacts": [
+        "Kerch/Red Sea risk → grain and food freight with a lag"
+      ],
+      "bullets": [
+        "Kerch Strait −100% week-over-week movement on the published pulse; Azov grain route constrained.",
+        "No FAO-grade print in the Sep 19 quote panel."
+      ]
+    },
+    "transport": {
+      "summary": "Maritime corridor risk still sets the transport map. Hormuz Red with rising transit counts, Suez Yellow after a Red week, Cape congestion High as the alternate (+15.3% WoW). UK ATC software outage is a one-off aviation ops item in the GB feed, not a chokepoint score.",
+      "cascadingImpacts": [
+        "Chokepoints + Gulf war → ships and aviation → delayed boxes"
+      ],
+      "bullets": [
+        "7 of 13 chokepoints Yellow or Red on the Sep 19 public snapshot.",
+        "Cape of Good Hope congestion High; week movement +15.3%."
+      ]
+    },
+    "logistics": {
+      "summary": "Logistics wire between war and prices: Hormuz/Kerch Red, Bab el-Mandeb and Suez Yellow, Cape High congestion. Hormuz transit rebound (+68.2% WoW) is the week’s relief valve inside an unchanged Red score — counts recovering, risk badge not. Partial coverage flags remain on several waterways.",
+      "cascadingImpacts": [
+        "Tanker/war-risk → freight inflation → CPI with a lag"
+      ],
+      "bullets": [
+        "Hormuz +68.2% and Bab el-Mandeb +7.3% week-over-week movement where published; Suez −8.9%; Kerch −100%.",
+        "Cape of Good Hope congestion High on the same snapshot."
+      ]
+    },
+    "demographics": {
+      "summary": "JP feed: Japan has a record 100,000 people aged over 100 (Al Jazeera ageing piece). No new UN/census global print in the pulse quotes. Displacement and labor stay in longer horizons except as crisis fatalities (Sudan 314; Red Sea tracker 960 in the Sep month pulse).",
+      "cascadingImpacts": [
+        "Ageing / displacement → policy and growth capacity on 2y–5y"
+      ],
+      "bullets": [
+        "Japan record centenarian count in the JP developments feed.",
+        "Sudan crisis page: 129 events / 314 fatalities in the Sep HAPI month — humanitarian, not a labor print."
+      ]
+    },
+    "public_policy": {
+      "summary": "Geopolitics board this week is sanctions + Arctic security + BoJ, not a fresh US CPI table on the quote panel. Trump signs broad Russia sanctions (opens China/India tariff risk per Nikkei); US–Denmark–Greenland security agreement for permanent US control over Greenland security. BoJ raises the benchmark to 1.25%, highest in 31 years (JP feed). Live FedWatch/CPI panels need authenticated WM access — FOMC 15–16 Sep outcome is not re-quoted on this public pulse.",
+      "cascadingImpacts": [
+        "Sanctions/tariffs + war premium → inflation expectations → G10 policy path"
+      ],
+      "bullets": [
+        "Trump signs Russia sanctions bill; China/India tariff exposure flagged in CN/IN feeds.",
+        "Greenland security agreement (US–Denmark–Greenland) on US developments and pulse headlines.",
+        "BoJ to 1.25% (31-year high) in the JP feed; authenticated WM MCP/API not connected for FedWatch."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold $4,424.9 (+0.57%) on the geo bid; copper $6.6915 (+0.45% day change, still below Sep 9’s $6.78). CN feed: China Rare Earth Group in talks to buy MP Materials shareholder Shenghe Resources; US–China discuss cutting tariffs on US LNG ahead of Xi visit. Public pulse did not publish stockpile/extraction series. Mining-tech: no verified process breakthrough in the geopolitics digest.",
+      "cascadingImpacts": [
+        "War bid → gold · rare-earth M&A → mineral-security capex"
+      ],
+      "bullets": [
+        "Gold $4,424.9; copper $6.6915 on the Sep 19 quote panel.",
+        "China rare-earth / Shenghe–MP Materials talks in CN developments.",
+        "Inventory/extraction series still need Pro/commodity sibling or MCP auth."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Hormuz stays Red; Brent holds a high-$90s to ~$100 neighborhood while the score is 70.",
+        "Ukraine stays Critical on the instability board; Sep HAPI fatality pulse stays elevated.",
+        "Russia sanctions implementation and China/India oil-tariff risk set the trade-policy tape.",
+        "BoJ at 1.25% is done for this print; G10 still in a war-premium inflation regime."
+      ],
+      "risks": [
+        "Hormuz closure or mine scare lasting more than a news cycle — diesel and Europe gas, not just Brent.",
+        "Sanctions secondary tariffs hit China/India crude flows harder than desks price.",
+        "Ukraine score keeps Rising and forces a wider European security spend spike."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Oil war premium fades only with a secure Hormuz corridor or a real ceasefire.",
+        "Cape rewiring stays a freight cost; Suez Yellow is relief, not normal.",
+        "Core inflation does not make a clean run at 2% while energy and tariffs bite.",
+        "Growth slows from the energy tax more than from a 2020-style collapse."
+      ],
+      "risks": [
+        "Second-round inflation if food freight and diesel stick via Kerch/Red Sea.",
+        "Europe winter gas if LNG routing and any Russia-gas political feelers stay messy.",
+        "Policy error — too slow on headline war inflation, too fast on labor."
+      ]
+    },
+    "2y": {
+      "base": [
+        "2026 Hormuz/Iran and Ukraine shocks remembered as mid-cycle supply breaks.",
+        "Capex gravitates to energy, grids, secured minerals, and Arctic/Greenland logistics.",
+        "AI infra remains power-constrained.",
+        "Chokepoint politics stay on the standing risk board."
+      ],
+      "risks": [
+        "Real recession if tightening and oil run together.",
+        "Frozen Gulf conflict that institutionalizes high-$80s to ~$100+ oil as normal.",
+        "Trade around the Cape for years, not weeks."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Chokepoint politics, mineral security, and Arctic basing become standing features.",
+        "Demographics (Japan-style ageing) and public debt cap any 1970s policy replay.",
+        "Mining and refining capacity, not ore in the ground, set the resource constraint."
+      ],
+      "risks": [
+        "A wider great-power war that takes the dashboard off monitor.",
+        "A clean peace plus productivity burst that collapses the war premium.",
+        "This brief would then look hawkish in hindsight."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Iran/Hormuz + Ukraine → Hormuz/Kerch Red (Suez Yellow) → crude premium → headline CPI · inflation expectations → G10 policy path",
+    "Russia sanctions + China/India tariff risk → trade friction → freight and energy inflation with a lag"
+  ]
+}
