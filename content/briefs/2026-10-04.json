@@ -1,0 +1,199 @@
+{
+  "weekId": "2026-10-04",
+  "title": "Ukraine jumps to 93 as oil rebounds and Hormuz transit plunges",
+  "published": "2026-10-04",
+  "timezone": "Europe/Prague",
+  "weekLabel": "4–10 Oct 2026",
+  "topMovers": [
+    {
+      "magnitude": "UA 93",
+      "label": "Ukraine Critical Rising +7",
+      "cause": "World Monitor Sep 28 pulse: UA Critical 93 Rising +7 (was Critical 82 on Sep 21). Still #1. Sep HAPI Ukraine-war month: 4,858 events / 2,015 fatalities. RU High 76 unchanged. RU–DE foreign ministers meet for first time since the invasion while Ukraine hits a Russian missile-component plant.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "$99.09",
+      "label": "Brent rebounds vs last week",
+      "cause": "Brent $99.09 (+1.69% day; up from Sep 21’s $97.43). WTI $94.08 (+1.81%). Pulse headlines: oil heads higher as US–Iran peace talks stall; Trump rejects Iran’s seven-day truce to reopen Hormuz and expects talks next week. Hormuz disruption still 70 Red.",
+      "tone": "down",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "−40.5%",
+      "label": "Hormuz transit plunges WoW",
+      "cause": "Hormuz stays 70 Red on Iran–Israel war / blockade-and-mines risk, but week movement flips to −40.5% vs prior week (was +68.2% on Sep 21). Kerch still 70 Red at 0% WoW. 7 of 13 chokepoints Yellow or Red.",
+      "tone": "down",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "IR 63",
+      "label": "Iran eases to Elevated 63",
+      "cause": "IR High 70 Rising +4 last week → Elevated 63 Falling −5. Score softens on diplomacy noise, not a Hormuz unwind. Trump rejects the seven-day reopen deal; scoreboard still shows Hormuz 70 Red and Gulf security pulse 471 events / 149 fatalities.",
+      "tone": "watch",
+      "domain": "war"
+    },
+    {
+      "magnitude": "IL 68",
+      "label": "Israel jumps to High 68",
+      "cause": "IL Normal 50 on Sep 21 → High 68 Rising +2. Only country with geo-convergence 30 on this pulse. Pulse board: Litani annexation talk from a far-right minister; Ireland–Israel sports protest signal. Lebanon–Israel Sep HAPI: 406 events / 37 fatalities.",
+      "tone": "down",
+      "domain": "war"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Grounded in World Monitor crawlable-live-pulse-2026-09-28.json (capturedAt 2026-09-28; quotesAsOf 04:46 UTC; live MCP/API still needs Balu’s X-WorldMonitor-Key). Brent $99.09 (+1.69%), WTI $94.08 (+1.81%), US hub nat gas $3.117 (−3.35%). Vs Sep 21 baseline: Brent +$1.66, WTI +$0.08. Tape firm on Iran-talks stalemate and a rejected seven-day Hormuz reopen, not on a scoreboard improvement. Hormuz still 70 Red; SA feed notes Mid-East oil export rebound as Saudi shipments rise.",
+      "cascadingImpacts": [
+        "Hormuz Red + rejected reopen truce → crude war premium returns → inflation path still energy-linked"
+      ],
+      "bullets": [
+        "Brent $99.09 and WTI $94.08 on the Sep 28 WM quote panel (vs $97.43 / $94.00 on Sep 21).",
+        "Hormuz disruption 70/100 (Red); week-over-week transit −40.5% where published.",
+        "Pulse headlines: oil higher on US–Iran stalemate; Trump rejects seven-day Hormuz reopen, expects talks next week; SA boosts Mid-East export shipments (Reuters)."
+      ]
+    },
+    "ai": {
+      "summary": "AI items on this pulse are governance and buildout, not a frontier-model launch. AU feed: OpenAI and Anthropic CEOs called to an Australian Senate inquiry on a rogue-hack probe. KR: Hyundai Engineering lands a $644m AI data-center deal. VN–KR partners push semiconductors and AI. AL at the UN calls for an international AI agreement and opposes slowing AI. Power cost from the war-energy premium remains the cascade into infra pace; WM homepage still maps 313 AI datacenters as the physical layer.",
+      "cascadingImpacts": [
+        "Energy tax → power cost → AI infra pace; Senate/AI-safety probes → compliance drag on model rollout"
+      ],
+      "bullets": [
+        "Australia Senate inquiry summons OpenAI and Anthropic chiefs (AU feed / CNBC).",
+        "Hyundai Engineering $644m AI data-center award (KR); VN–KR semiconductor/AI partnership item.",
+        "No verified frontier-model launch on this public pulse; live AI-infra panels still need authenticated WM access."
+      ]
+    },
+    "war": {
+      "summary": "Ukraine re-accelerates to Critical 93 Rising +7 and stays #1. Iran eases to Elevated 63 Falling −5 on diplomacy noise while Hormuz stays Red. Israel jumps to High 68 Rising +2 with geo-convergence 30. Yemen holds High 70; Russia High 76 unchanged; Syria High 72. Hormuz and Kerch remain 70 Red; Bab el-Mandeb 40 Yellow; Suez 35 Yellow. Sep HAPI month pulses: Ukraine-war 4,858 / 2,015; Red Sea 581 / 733; Hormuz–Gulf 471 / 149; Iran–Israel 318 / 63.",
+      "cascadingImpacts": [
+        "Ukraine spike + Iran/Hormuz stalemate + Israel rise → Red chokepoints → insurance, ships, oil premium"
+      ],
+      "bullets": [
+        "Hormuz and Kerch both 70 Red; Suez 35 Yellow; Bab el-Mandeb 40 Yellow; 7 of 13 Yellow or Red.",
+        "Ukraine Critical 93 Rising +7; Iran Elevated 63 Falling −5; Israel High 68 Rising +2; Yemen High 70; Russia High 76.",
+        "Pulse headlines: Trump rejects seven-day Hormuz reopen; RU–DE FMs meet first time since invasion; Houthi missiles/drones toward Saudi downed (SA feed)."
+      ]
+    },
+    "food": {
+      "summary": "No FAO index print in the public quote panel. Transmission still freight + war-risk: Kerch 70 Red at 0% WoW with Azov grain severely restricted; Red Sea / Bab el-Mandeb Yellow keeps insurance elevated. Horn of Africa Sep HAPI 282 events / 524 fatalities and Sudan 93 / 261 are humanitarian load, not a global grain print.",
+      "cascadingImpacts": [
+        "Kerch/Red Sea risk → grain and food freight with a lag"
+      ],
+      "bullets": [
+        "Kerch Strait 70 Red, 0% week-over-week movement; Azov grain route constrained on the published pulse.",
+        "No FAO-grade print in the Sep 28 quote panel."
+      ]
+    },
+    "transport": {
+      "summary": "Maritime corridor risk still sets the transport map. Hormuz Red with a sharp transit drop (−40.5% WoW), Kerch Red flat, Suez Yellow (+10.6% WoW), Bab el-Mandeb Yellow (−9.4%). Cape of Good Hope stays High congestion as the alternate (−2.2% WoW). Taiwan Strait Yellow 25 with Elevated congestion. Dover and Bosphorus Yellow with High congestion. MX feed: Hurricane Polo Category 3 off Mexico is a weather ops item, not a chokepoint score change.",
+      "cascadingImpacts": [
+        "Chokepoints + Gulf/Red Sea war → ships and aviation → delayed boxes"
+      ],
+      "bullets": [
+        "7 of 13 chokepoints Yellow or Red on the Sep 28 public snapshot (2 Red, 5 Yellow, 6 Green).",
+        "Hormuz −40.5%, Suez +10.6%, Bab el-Mandeb −9.4%, Kerch 0% week movement where published.",
+        "Cape of Good Hope and Gibraltar congestion High; Taiwan Strait congestion Elevated."
+      ]
+    },
+    "logistics": {
+      "summary": "Logistics wire between war and prices flipped from last week’s Hormuz rebound story to a transit plunge: Hormuz −40.5% WoW inside an unchanged 70 Red badge. Kerch stuck Red; Bab and Suez Yellow. Oil firm on talks stalemate while physical Hormuz counts fall. Cape High congestion remains the reroute cost. Partial coverage flags stay on several waterways.",
+      "cascadingImpacts": [
+        "Tanker/war-risk → freight inflation → CPI with a lag"
+      ],
+      "bullets": [
+        "Hormuz −40.5%, Bab el-Mandeb −9.4%, Suez +10.6%, Kerch 0%, Panama −12% week-over-week movement where published.",
+        "Cape of Good Hope congestion High on the same snapshot."
+      ]
+    },
+    "demographics": {
+      "summary": "No new UN/census global print in the pulse quotes. Displacement and fatality load stay in the crisis pages: Ukraine-war 2,015 fatalities; Red Sea tracker 733; Nigeria 297 events / 386 fatalities; Horn of Africa 524; Sudan 261; Myanmar 249 in the Sep HAPI month. IN feed floods/landslides (56 India / 14 Nepal) and MX Hurricane Polo are acute hazard items, not structural ageing prints.",
+      "cascadingImpacts": [
+        "Conflict fatalities / displacement → labor and policy capacity on 2y–5y"
+      ],
+      "bullets": [
+        "Ukraine-war crisis page: 4,858 events / 2,015 fatalities in the Sep HAPI month.",
+        "Nigeria 297 / 386 and Horn of Africa 282 / 524 on the same month pulse: humanitarian load, not a labor print."
+      ]
+    },
+    "public_policy": {
+      "summary": "Board this week is Iran diplomacy theater + US–China trade truce extension + Europe–Russia contact. Pulse headlines: Trump rejects Iran’s seven-day Hormuz reopen and expects talks next week; China says a US trade truce extension creates space ahead of Trump–Xi, with CNBC stressing ‘tangible outcomes’ needed. RU/DE: first foreign-minister meeting since the invasion. GB: five men arrested near a UK air base used by the US in the Iran war. AU Senate AI probe of OpenAI/Anthropic is the governance sleeve. Live FedWatch/CPI panels need authenticated WM access.",
+      "cascadingImpacts": [
+        "Iran talks fail/succeed + US–China truce → energy and trade inflation path; Europe–Russia contact → Ukraine aid politics"
+      ],
+      "bullets": [
+        "Trump rejects seven-day Hormuz reopen; expects Iran talks next week (France 24 / Guardian ME).",
+        "China on US trade truce extension ahead of Trump–Xi; RU–DE FMs meet first time since invasion.",
+        "UK air-base terror-prep arrests tied to Iran-war basing (AP). Authenticated WM MCP/API not connected for FedWatch."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold $4,230.8 (−2.09%; down hard from Sep 21’s $4,399.3); copper $6.667 (−1.46%; down from $6.732). War-bid softens in metals even as oil firms on Hormuz diplomacy failure. AZ feed: Azerbaijan signs investment agreements worth more than $10B (Reuters Energy). VN–KR semiconductor/AI partnership is the tech-minerals adjacent item. Public pulse did not publish stockpile/extraction series. Mining-tech: no new ore-find print; datacenter and semiconductor deals are the process items this week.",
+      "cascadingImpacts": [
+        "Oil firm / gold ease → risk mix shift · semiconductor/AI buildout → mineral-security demand · missing stockpile series → Pro/MCP gap"
+      ],
+      "bullets": [
+        "Gold $4,230.8; copper $6.667 on the Sep 28 quote panel.",
+        "Azerbaijan >$10B investment agreements (Reuters Energy); VN–KR semiconductors and AI item.",
+        "Inventory/extraction series still need Pro/commodity sibling or MCP auth."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Hormuz stays Red; Brent holds a high-$90s neighborhood while rejected reopen deals and falling transit keep the war premium sticky.",
+        "Ukraine Critical 93 keeps European security spend elevated; Israel High 68 and Yemen High 70 keep Red Sea / Levant insurance high.",
+        "US–Iran talks next week and US–China truce extension set the diplomacy tape without changing chokepoint scores yet.",
+        "Gold’s drop and oil’s rebound leave a split risk asset mix into October."
+      ],
+      "risks": [
+        "Hormuz closure or mine scare lasting more than a news cycle: diesel and Europe gas, not just Brent.",
+        "Ukraine score stays above 90 and forces a wider European security spend spike.",
+        "Talks collapse into a wider Gulf strike cycle that lifts Bab el-Mandeb toward Red."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Oil war premium fades only with a secure Hormuz corridor or a real ceasefire. Rejected seven-day deals are not that.",
+        "Cape rewiring stays a freight cost; Suez Yellow is relief, not normal.",
+        "Core inflation does not make a clean run at 2% while energy, freight, and tariff/truce politics bite.",
+        "US–China tangible-outcome talks either deliver a limited bilateral package or stall into another tariff round."
+      ],
+      "risks": [
+        "Second-round inflation if food freight and diesel stick via Kerch/Red Sea.",
+        "Europe winter gas if LNG routing and any Russia-gas political feelers stay messy.",
+        "Policy error: too slow on headline war inflation, too fast on labor."
+      ]
+    },
+    "2y": {
+      "base": [
+        "2026 Hormuz/Iran and Ukraine shocks remembered as mid-cycle supply breaks.",
+        "Capex gravitates to energy, grids, secured minerals, shipyards, and AI data-center power.",
+        "AI infra remains power-constrained; Senate/safety probes add compliance cost.",
+        "Chokepoint politics stay on the standing risk board."
+      ],
+      "risks": [
+        "Real recession if tightening and oil run together.",
+        "Frozen Gulf conflict that institutionalizes high-$80s to ~$100 oil as normal.",
+        "Trade around the Cape for years, not weeks."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Chokepoint politics, mineral security, and dual-use shipyard capacity become standing features.",
+        "Demographics and public debt cap any 1970s policy replay.",
+        "Mining, refining, and reclaim capacity, not ore in the ground, set the resource constraint."
+      ],
+      "risks": [
+        "A wider great-power war that takes the dashboard off monitor.",
+        "A clean peace plus productivity burst that collapses the war premium.",
+        "This brief would then look hawkish in hindsight."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Ukraine Critical 93 + Iran/Hormuz Red (transit −40.5%) + Israel High 68 → Hormuz/Kerch Red (Suez/Bab Yellow) → crude war premium rebound → headline CPI · inflation expectations → G10 policy path",
+    "Rejected Hormuz reopen + US–China truce extension ahead of Trump–Xi → diplomacy relief or another tariff/war-premium round → freight and energy inflation with a lag"
+  ]
+}
