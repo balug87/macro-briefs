@@ -1,0 +1,205 @@
+{
+  "weekId": "2026-10-11",
+  "title": "Major powers jump on the instability index as Brent clears $100 and Yemen goes to all-out war",
+  "published": "2026-10-11",
+  "timezone": "Europe/Prague",
+  "weekLabel": "11–17 Oct 2026",
+  "topMovers": [
+    {
+      "magnitude": "GB +19",
+      "label": "Big-economy instability step-up",
+      "cause": "Oct 5 pulse vs Sep 28: UK 31 to 50, China 59 to High 75, France 32 to 48, US 35 to 49, Germany 36 to 49, Poland 32 to 45, India 50 to Elevated 61. Methodology unchanged (v8). Feed drivers: US pulls all bombers from a UK base after a suspected terror attack, UK plans tariffs on Chinese EVs under EU pressure, Japanese firms leave China at a record rate, India election-chief protests, France drought and school protests. A move this broad may partly reflect input refresh, so read it as a direction, not a precise level.",
+      "tone": "down",
+      "domain": "public_policy"
+    },
+    {
+      "magnitude": "RU 87",
+      "label": "Russia jumps to Critical (+11)",
+      "cause": "RU High 76 to Critical 87. Feeds: ISW reports a new Russian offensive drive, strikes on Kyiv bridges during the German chancellor's visit, a Russian strike on a Liberian-flagged ship in Odesa that killed one, and Lukashenko pledging full support. Ukraine holds at Critical 93. Polymarket prices a Russian strike on Kyiv on Oct 12 at 88%.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "$101.77",
+      "label": "Brent over $100, WTI falls",
+      "cause": "Brent $99.09 to $101.77 (+2.7% WoW) while WTI fell $94.08 to $90.26 (−4.1%). The Brent–WTI spread more than doubled, $5.01 to $11.51. Same week: G7 unveils a 100 million barrel reserve release, Saudi Arabia cuts November prices to Asia to six-year lows, and BBC reports Middle East supply nearly back to pre-war levels. Europe's diesel squeeze worsens.",
+      "tone": "down",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "+9.8%",
+      "label": "Yemen declares all-out war on Houthis",
+      "cause": "Yemen's Saudi-backed government launches a drive to retake all Houthi-held territory; reports say Saudi Arabia plans an assault to break the Red Sea chokehold. Houthi missiles and drones intercepted over Saudi Arabia; explosions near a tanker off Yemen. Bab el-Mandeb stays 40 Yellow but week movement swings from −9.4% to +9.8%.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "IR 70",
+      "label": "Iran back to High (+7)",
+      "cause": "IR Elevated 63 to High 70 as US talks stall; Iran says there is no military solution and plans longer missile range. Israel eases High 68 to Elevated 65 but keeps the only geo-convergence score (30). Polymarket puts the Israel–Iran ceasefire holding through Oct 31 at 80%. Hormuz stays 70 Red, 0% WoW.",
+      "tone": "watch",
+      "domain": "war"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Grounded in World Monitor crawlable-live-pulse-2026-10-05.json (capturedAt 2026-10-05; quotes as of 07:05 Prague). Week-over-week deltas compare against the 2026-09-28 pulse. Live World Monitor MCP/API still needs Balu's X-WorldMonitor-Key; the dashboard returns a JS shell to crawlers. Brent $101.77, WTI $90.26, US hub gas $3.025 (−3.0% WoW). The tape is split: Brent firm on the Hormuz Red score and a worsening European diesel picture, WTI soft as supply relief headlines stack up (G7 100 mmbbl release, Saudi Asia price cut to six-year lows, Gulf exports near pre-war).",
+      "cascadingImpacts": [
+        "Brent–WTI spread $11.51 → Atlantic-basin seaborne crude and diesel priced at a war premium while US barrels stay cheap → Europe and import-dependent Asia carry the energy inflation, the US less so"
+      ],
+      "bullets": [
+        "Brent $101.77 (+2.7% WoW) and WTI $90.26 (−4.1%) on the Oct 5 quote panel; spread widens from $5.01 to $11.51.",
+        "G7 unveils a 100 million barrel strategic reserve release (Energy Intel, Oct 4); Saudi Arabia cuts November official selling prices to Asia to six-year lows (Reuters).",
+        "Iraq arranges a tanker to move past Hormuz (gCaptain); Tajikistan starts receiving Iranian oil and fuel; Ecuador's main oil pipeline halted for days after a fire.",
+        "Trump tells South Korea to sign the Alaska LNG deal or face higher charges (CNBC); Bulgaria makes nuclear expansion its energy priority."
+      ]
+    },
+    "ai": {
+      "summary": "Thin week for AI on the World Monitor pulse. The signals are capital and security, not compute or policy: record Hong Kong fundraising on AI deals, a $20 billion industrial-software deal, and AI in disinformation and weapons claims.",
+      "cascadingImpacts": [
+        "AI deal capital keeps flowing while Brent sits over $100 → data-center power cost and grid access stay the binding constraint, especially in import-dependent Europe and Asia"
+      ],
+      "bullets": [
+        "AI deal frenzy powers Hong Kong fundraising to a record in July–September (Business Standard).",
+        "Schneider Electric nears a ~$20 billion deal for US software group PTC (Reuters), a bet on industrial automation and digital twins.",
+        "Anthropic report flags suspected Russian AI-driven disinformation in the Central African Republic; North Korea claims AI features on a new intermediate-range missile."
+      ]
+    },
+    "war": {
+      "summary": "Three fronts heated at once. Russia climbed to Critical 87 next to Ukraine at 93; Yemen's government declared all-out war on the Houthis with Saudi backing; Ethiopian federal forces took the Tigray capital. Iran rose back to High 70 as talks stalled. Hormuz and Kerch stay 70 Red.",
+      "cascadingImpacts": [
+        "Yemen offensive + Saudi assault plans + Houthi strikes on Saudi Arabia → Bab el-Mandeb risk climbs from Yellow toward Red → longer Cape routings and higher war-risk insurance on Asia–Europe trade"
+      ],
+      "bullets": [
+        "Country scores: UA 93 Critical (flat), RU 87 Critical (+11), CN 75 High (+16), SY 74 (+2), IR 70 High (+7), YE/PK/MX 70, IL 65 (−3), IQ 65, MM 65.",
+        "Ethiopia: federal forces seize the Tigray capital; four African leaders issue a joint declaration as the war escalates. Horn of Africa crisis page: 439 events / 721 fatalities in September.",
+        "September conflict data finalized upward as the month completed: Ukraine war 7,358 events / 2,905 fatalities (was 4,858 / 2,015 on the partial count); Red Sea security 1,054 / 2,279, almost all in Yemen. These are month-total revisions, not one-week jumps.",
+        "North Korea fires ballistic missiles as tensions with Seoul grow over border mine blasts; Pakistan launches air strikes on Afghanistan."
+      ]
+    },
+    "food": {
+      "summary": "No single food shock on the pulse, but weather and route stress pile up in Europe and the Black Sea. Kerch stays 70 Red; Russia struck a merchant ship in Odesa; droughts hit Slovak harvests and French water networks.",
+      "cascadingImpacts": [
+        "Odesa ship strike + Kerch Red + diesel squeeze → higher Black Sea grain freight and insurance → wheat and vegetable-oil import bills rise for MENA buyers already facing Middle East food insecurity"
+      ],
+      "bullets": [
+        "Russia hits a Liberian-flagged ship in Odesa port, one killed (gCaptain); Kerch Strait 70 Red, 0% WoW.",
+        "Drought hits Slovakia's autumn harvest; persistent drought pressures France's drinking water; Bulgaria reports higher sunflower yields but higher cooking-oil prices.",
+        "Colombia's agriculture minister tells farmers not to plant rice; Barbados steps up poultry surveillance after a Suriname bird flu outbreak; UN flags food insecurity in the Middle East."
+      ]
+    },
+    "transport": {
+      "summary": "Chokepoint board unchanged in color: 2 Red (Hormuz, Kerch), 5 Yellow (Suez, Bab el-Mandeb, Taiwan Strait, Bosphorus, Dover), 6 Green. Aviation security made the feed: US bombers pulled from a UK base, an axe attack on a flydubai flight deck, a bomb threat at Chisinau airport.",
+      "cascadingImpacts": [
+        "Aviation security incidents in the UK, UAE and Moldova → tighter airport and airspace controls → small but real friction on European and Gulf air cargo"
+      ],
+      "bullets": [
+        "7 of 13 chokepoints Yellow or Red on the Oct 5 pulse; Taiwan Strait eases 25 to 20 but stays Yellow; Dover carries 7 navigational warnings.",
+        "US Air Force removes all bombers from a British base after a suspected terror attack (AP); flydubai co-pilot attacked the captain with an axe, UAE says.",
+        "Rail build-out: Etihad Rail launches in Dubai; ATLS plans a Djibouti–Ethiopia fuel rail link; EBRD funds Montenegro's Bar railway upgrade."
+      ]
+    },
+    "logistics": {
+      "summary": "Transit volumes were mixed and smaller in size than last week's Hormuz swing. Bab el-Mandeb traffic rose 9.8% even as Yemen escalated; Bosphorus fell 8.7%; Hormuz and Kerch flat at 0%. Iraq is routing around Hormuz.",
+      "cascadingImpacts": [
+        "Hormuz flat at Red + Iraqi workaround tankers + G7 stock release → Gulf crude flows back near pre-war levels but on a costlier, riskier path → tanker rates and insurance stay elevated even if volumes recover"
+      ],
+      "bullets": [
+        "Week-over-week transit movement: Bab el-Mandeb +9.8%, Dover +6%, Taiwan +4.3%, Gibraltar +4.3%, Panama +3.3%, Suez −4.4%, Malacca −5.2%, Korea −7.5%, Bosphorus −8.7%, Lombok −13.1%, Hormuz 0%, Kerch 0%.",
+        "Middle East crude exports reported above pre-war levels while attacks increase; US Coast Guard intercepts a ship carrying fuel to Cuba.",
+        "Iron ore flows face headwinds as steel demand softens (Cyprus Shipping News)."
+      ]
+    },
+    "demographics": {
+      "summary": "Health and displacement led. DRC's Ebola outbreak passed 4,000 deaths and a transit centre burned. Ageing and low birth rates showed up in Singapore and Kyrgyzstan; Western deportation policy is moving people to third countries.",
+      "cascadingImpacts": [
+        "DRC Ebola deaths past 4,000 + aid-worker loss + camp fire → response capacity strained in an eastern Congo conflict zone → cross-border spread risk to Uganda and Rwanda trade corridors"
+      ],
+      "bullets": [
+        "DRC Ebola (Bundibugyo strain) deaths top 4,000; an Ebola transit centre burns down in a camp; IFRC mourns a Uganda Red Cross worker.",
+        "Singapore turns matchmaker amid a rock-bottom birth rate; Kyrgyzstan's ageing population pressures pensions; Iceland's population is smaller than previously calculated.",
+        "Burundi to take third-country deportees from the US; ~1,500 migrants move from Malaysia to Myanmar despite UN warnings; Haiti counts over 5,000 killed or injured by gangs this year (UN)."
+      ]
+    },
+    "public_policy": {
+      "summary": "Elections and trade defense dominated. Brazil goes to a runoff with Flávio Bolsonaro ahead of Lula; Latvia's pro-European ruling party won; Bosnian nationalists claimed victory. The UK is set to tariff Chinese EVs under EU pressure. Markets carried Fed-hike fears into the week.",
+      "cascadingImpacts": [
+        "Brent over $100 + Fed-hike fears + EUR/USD down 1.8% to 1.1186 → stronger dollar tightens conditions for importers and dollar debtors → more IMF programs and subsidy fights (Sri Lanka, Bolivia, Cameroon)"
+      ],
+      "bullets": [
+        "Brazil's presidential vote heads to a runoff, Flávio Bolsonaro first; Latvia's governing coalition wins 35% as populists gain; Spain's Sánchez weighs early elections.",
+        "UK plans tariffs on Chinese EVs (Reuters/Times); Japanese companies exit China at a historic rate (CNBC); Trump presses Seoul on Alaska LNG.",
+        "IMF staff-level deal with Sri Lanka for $345 million; Bolivia IMF loan approved with $214 million up front; IMF warns Cameroon of high debt-distress risk over fuel subsidies.",
+        "Chile: 20,000 march against Kast's austerity budget as mining and healthcare strikes erupt; India protests demand the election chief resign."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Metals cooled: gold $4,159.5 (−1.7% WoW), copper $6.571/lb (−1.4%). Copper supply news is about new capacity and labor: Glencore's $4 billion Argentina project cleared the RIGI investment regime while Chilean miners struck.",
+      "cascadingImpacts": [
+        "Chile mining strikes + softer copper price + Glencore Argentina approval → near-term supply risk sits in Chile, medium-term relief from Argentina → copper stays tight for grid and data-center buildout"
+      ],
+      "bullets": [
+        "Gold $4,159.5 (from $4,230.8) and copper $6.571 (from $6.667) on the Oct 5 quote panel; US–Canada trade talks reported pushing metals prices up (S&P Global).",
+        "Glencore gets RIGI approval for a $4 billion Argentina copper project (Northern Miner); Atex restarts lithium exploration in Côte d'Ivoire; Indonesia's drought weighs on nickel operations.",
+        "Kenya breaks ground on a $16 billion refinery; Kazakhstan plans a fourth refinery by 2033; Poland gets a 21 MW PEM electrolyzer; Gulf states urged to address environmental damage from the Iran war."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Brent holds around $100 while Hormuz stays Red; the G7 release and Saudi price cuts cap spikes and keep WTI near $90.",
+        "Russia and Ukraine both stay Critical; Kyiv infrastructure strikes continue and European interceptor-drone spending rises.",
+        "Yemen offensive keeps Bab el-Mandeb Yellow with a rising risk score; Red Sea insurance stays high.",
+        "Brazil runoff and US–Iran talks set the political tape; Israel–Iran ceasefire likely holds through Oct 31 (Polymarket 80%)."
+      ],
+      "risks": [
+        "Saudi forces enter Yemen directly and Houthis hit Red Sea shipping again, pushing Bab el-Mandeb to Red.",
+        "European diesel shortage turns into rationing headlines before winter.",
+        "Ebola spreads across the DRC–Uganda–Rwanda border."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Oil war premium persists at Brent but fades at WTI; the spread is the cleanest read on who pays for Hormuz.",
+        "Major-economy instability scores stay higher than in September as security incidents, trade defense and elections pile up.",
+        "Core inflation in Europe sticks above target on diesel and freight; Fed-hike talk keeps the dollar firm.",
+        "Copper supply additions in Argentina are years out; Chile labor sets the near-term supply story."
+      ],
+      "risks": [
+        "Ceasefire break between Israel and Iran that closes Hormuz in practice, not just on the scoreboard.",
+        "Russian offensive success that forces a larger European defense budget shock.",
+        "Policy error: a Fed hike into an oil shock that pushes import-dependent economies into recession."
+      ]
+    },
+    "2y": {
+      "base": [
+        "The 2026 Gulf and Ukraine shocks are remembered as a period when strategic reserves, pipelines and rail were rebuilt as security assets.",
+        "Capex flows to refineries outside the Gulf, grids, copper and critical minerals, interceptor drones and AI data-center power.",
+        "Trade defense against Chinese EVs spreads from the EU to the UK and others; Japanese and Western firms keep de-risking China.",
+        "Chokepoint scores stay a standing input for freight and insurance pricing."
+      ],
+      "risks": [
+        "A frozen Gulf conflict that makes $90–100 Brent normal.",
+        "A Taiwan Strait move that makes today's Yellow look mild.",
+        "Ebola or another outbreak that escapes a conflict zone."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Energy security means storage, diverse routes and domestic power, not just production.",
+        "Mining, refining and labor capacity, not ore in the ground, set the resource constraint.",
+        "Ageing and low birth rates in Asia and Europe cap growth and push automation and AI adoption."
+      ],
+      "risks": [
+        "A wider great-power war that takes the dashboard off monitor.",
+        "A durable Gulf peace plus productivity gains that collapse the war premium and make this brief look too hawkish."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Russia Critical 87 + Ukraine 93 + Odesa ship strike + Kerch Red → Black Sea grain and fuel routes stay costly → European diesel and food inflation stay sticky into winter → ECB has less room to ease",
+    "Iran High 70 + stalled talks + Yemen all-out war → Hormuz Red and Bab el-Mandeb risk rising → Brent over $100 while WTI falls → Brent–WTI spread $11.51 → Europe and Asia pay the war premium, US partly insulated",
+    "UK/China/US/France instability step-up + UK EV tariffs + Japanese exit from China → trade defense and security spending rise across big economies → supply chains re-route and cost more"
+  ]
+}
