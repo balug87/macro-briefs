@@ -1,0 +1,213 @@
+{
+  "weekId": "2026-10-18",
+  "title": "Hormuz jumps to 85 as Houthi missiles hit Riyadh and Trump announces a Ukraine energy ceasefire",
+  "published": "2026-10-18",
+  "timezone": "Europe/Prague",
+  "weekLabel": "18–24 Oct 2026",
+  "topMovers": [
+    {
+      "magnitude": "85",
+      "label": "Hormuz disruption score up 15",
+      "cause": "Oct 12 pulse vs Oct 5: Strait of Hormuz rises from 70 to 85 (Red), transits fall 13.6% week over week, and gCaptain reports more tankers hit in Hormuz as US forces strike a cargo ship. A tanker with 11 Indian crew was attacked off Oman with 2 missing, and another tanker took multiple projectiles off Qatar.",
+      "tone": "down",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "12 killed",
+      "label": "Houthi missiles hit Riyadh airport",
+      "cause": "A Houthi missile strike on Riyadh airport killed 12 (AP; NDTV reports 14) and the terminal was hit again a day later. The Saudi-led coalition calls it a war crime and vows a response, Pakistan confirms it has troops in Saudi Arabia, and British Airways, KLM and Kuwait Airways cut Saudi flights.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "UA 97",
+      "label": "Ukraine climbs as energy ceasefire stalls",
+      "cause": "Ukraine rises from 93 to 97 (Critical) and Russia holds at 87. On Oct 11 Trump announced a Russia-Ukraine energy ceasefire that surprised Zelenskiy; Moscow stayed silent and Russian strikes hit Ukrainian power plants. Polymarket priced Russia-Ukraine peace talks by Oct 31 at 23% on Oct 12.",
+      "tone": "watch",
+      "domain": "war"
+    },
+    {
+      "magnitude": "$13.03",
+      "label": "Brent-WTI spread widens again",
+      "cause": "Brent rose from $101.77 to $103.40 (+1.6%) while WTI held at $90.37 (+0.1%), so the spread widened from $11.51 to $13.03. Oil slipped on the day of the pulse (Brent -1.26%) as traders priced the energy-ceasefire headline.",
+      "tone": "down",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "GB -19",
+      "label": "Last week's big-economy jump reverses",
+      "cause": "UK 50 to 31, France 48 to 31, Poland 45 to 30, Germany 49 to 36, India 61 to 50, Turkey 60 to 48, Israel 65 to 50, US 49 to 44. Most land back near their Sep 28 levels, so treat last week's step-up as input noise. Japan (+11), South Korea (+10) and Taiwan (+7) moved the other way.",
+      "tone": "up",
+      "domain": "public_policy"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Source: World Monitor crawlable-live-pulse-2026-10-12.json (capturedAt 2026-10-12, quotes as of 07:00 Prague). Week-over-week moves compare against the 2026-10-05 pulse. No newer pulse existed when this brief was written, so the data is six days old. Live World Monitor MCP/API access still needs Balu's X-WorldMonitor-Key, and the dashboard serves crawlers a JavaScript shell. Brent sits at $103.40 and WTI at $90.37; US gas rose 4.6% to $3.165. Hormuz risk pushed Brent up for the week, and the energy-ceasefire headline pulled it back on Monday.",
+      "cascadingImpacts": [
+        "Hormuz at 85 Red + tanker attacks off Oman and Qatar → war-risk premiums and crew pay climb → Brent holds a $13.03 premium over WTI → Europe and Asian importers carry the cost while US barrels stay cheaper"
+      ],
+      "bullets": [
+        "Brent $103.40 (+1.6% WoW), WTI $90.37 (+0.1%), US natural gas futures $3.165 (+4.6%) on the Oct 12 quote panel.",
+        "Reuters and CNBC: oil fell after Trump declared a Russia-Ukraine energy ceasefire. Zelenskiy said Ukraine will stop hitting Russian refineries if Russia halts attacks on Ukrainian energy.",
+        "Carney condemns a US-Russia diesel deal; Germany keeps pursuing new Russia sanctions anyway.",
+        "ADNOC's CEO says the new UAE pipeline that bypasses Hormuz is 50% complete; Canada plans to fast-track an oil pipeline to diversify exports away from the US.",
+        "Supply strain at the edges: Libya's Brega failed to deliver fuel to southern Libya for three days, Niger faces petrol shortages, and Cameroon's police fuel reserves ran dry. Australia approved a large coal mine extension; Brussels Times reports Belgium has come around to nuclear power."
+      ]
+    },
+    "ai": {
+      "summary": "AI barely registered on this pulse. The signals sit in supply chains, regulation and battlefield use. A Chilean copper strike is testing the AI buildout's metal supply, Norway moved to ban AI smart glasses in public, and a Dutch firm uses AI to link drone systems in Ukraine. US tech held up: Nasdaq 27,366 (+0.6% WoW), S&P 500 7,811.54 (+1.2%).",
+      "cascadingImpacts": [
+        "El Teniente partial shutdown + Chilean strike → copper up 2.6% to $6.744/lb → higher wiring and grid costs for data-center buildouts"
+      ],
+      "bullets": [
+        "Startup Fortune: a strike at one Chilean copper mine is testing the AI buildout's supply chain.",
+        "Norway moves to ban AI smart glasses in public (Bangkok Post); Denmark tests humanoid robots for night shifts in supermarkets (EuroNews).",
+        "Defense News: a Dutch firm uses AI to help drone systems talk to each other on Ukraine's battlefield. An Armenian AI factory rejects Russian claims that it gathers intelligence.",
+        "EonFibre launches a direct data-centre connectivity product in New Zealand."
+      ]
+    },
+    "war": {
+      "summary": "The Gulf war widened toward Saudi Arabia. Houthi missiles hit Riyadh airport twice, Pakistan confirmed troops on Saudi soil, and Hormuz climbed to 85. In Ukraine, Trump's energy ceasefire announcement met fresh Russian strikes, and Ukraine rose to 97. Ethiopian troops entered Adigrat near the Eritrean border. No country carries a geo-convergence score this week; Israel's 30 dropped to 0.",
+      "cascadingImpacts": [
+        "Houthi strikes on Riyadh + Saudi vow to respond + Pakistani troops in Saudi Arabia → wider Saudi-Houthi war → higher risk for Bab el-Mandeb and Gulf airspace → costlier Asia-Europe shipping and Gulf air cargo"
+      ],
+      "bullets": [
+        "Country scores: UA 97 Critical (+4), RU 87 Critical (flat), SY 71 (-3), IR/MX/PK/YE 70, CN 69 (-6), MM 64, IQ 60 (-5), AF/KP/LB 60. Saudi Arabia stays at 50 despite the airport strikes.",
+        "Iran: Pentagon raises the Iran war death toll to 21 (Task & Purpose). Polymarket on Oct 12: US-Iran ceasefire holds through Oct 31 at 79%, Iran-Oman Hormuz agreement by Oct 31 at 15%.",
+        "Europe's hybrid front: Poland detains a man suspected of plotting to assassinate PM Tusk and warns NATO to prepare for a deadly Russian hybrid attack; Bulgaria sends a frigate after drone attacks on Black Sea vessels; Lithuania deploys troops to the Kaliningrad border after a Belarus-Latvia breach.",
+        "Horn of Africa: Ethiopian drones hit Eritrean troops in Tigray; the UN chief is gravely concerned. An RSF drone strike killed 41 near the Ethiopian border, and air strikes killed dozens of gold miners on the Egypt-Sudan border.",
+        "North Korea fired multiple ballistic missiles on Oct 12, days after South Korea's hypersonic test. September conflict totals finalized higher again: Ukraine war 9,616 events / 3,716 fatalities, Red Sea security 1,386 / 4,303 (almost all Yemen). These are month-total revisions for September."
+      ]
+    },
+    "food": {
+      "summary": "Weather drove the food signals. Hungary reports its worst drought in 126 years, Rwanda's inflation jumped to 17.2% on food prices, and Somalia faces a child malnutrition emergency. Black Sea routes stay stressed: Kerch holds at 70 Red and Bosphorus transits fell 22.2%.",
+      "cascadingImpacts": [
+        "Hungary's record drought + Bosphorus transits down 22.2% + Kerch Red → tighter Central European and Black Sea grain supply → higher feed and bread costs for MENA importers already hit by Gulf freight premiums"
+      ],
+      "bullets": [
+        "EuroNews: Hungary's 2026 drought is the most severe in 126 years. Rwanda inflation hits 17.2% as food prices rise.",
+        "Bangladesh's subsidised food distribution falls, raising poverty concerns; WFP needs over $30 million to keep feeding Congolese refugees in Burundi; UN says over two-thirds of Myanmar's people are poor or at risk.",
+        "Namibia detects foot-and-mouth disease in a second region and starts building a fence in ||Kharas. Kyrgyzstan proposes a sugar import ban with domestic output at 74.5% of demand.",
+        "Tanzania reports 133% food self-sufficiency; Bhutan's paddy land shrinks as imports soar; Suriname rejected 384.8 tonnes of Guyanese rice."
+      ]
+    },
+    "transport": {
+      "summary": "Eight of 13 chokepoints now show Yellow or Red, up from seven, as Malacca moved from Green 10 to Yellow 20. Aviation took the hardest hits: Riyadh airport closures cascaded through Gulf schedules. A magnitude 7.6 to 7.7 quake put Panama under a state of emergency, yet the canal stayed Green with transits up 0.5%.",
+      "cascadingImpacts": [
+        "Riyadh airport strikes → BA, KLM, Kuwait Airways and UAE carriers cancel Saudi flights → Gulf hub capacity and air cargo slots shrink → longer routings for Europe-Asia freight"
+      ],
+      "bullets": [
+        "Chokepoint board: Red Hormuz 85 and Kerch 70; Yellow Bab el-Mandeb 40, Suez 35, Bosphorus 30, Dover 30 (7 navigational warnings), Taiwan 20, Malacca 20.",
+        "Panama quake: tsunami warnings, damaged buildings, US forces mobilized to help. Hurricane Simon hit Mexico's Pacific coast as a Category 3 storm; floods in Nepal swept away homes and bridges.",
+        "Trump revokes decades-old restrictions on US-Lebanon flights; Belgium saw 140 flights cancelled amid unrest.",
+        "Build-out: UAE and Saudi Arabia sign a rail connectivity deal; Argentina allocates $1.5 billion to 35 airports through 2031; Georgia plans a $200 million rail link to Anaklia port; Emirates adds seven weekly cargo flights to South America."
+      ]
+    },
+    "logistics": {
+      "summary": "Gulf flows contracted: Hormuz transits fell 13.6% week over week, with 76 vessels counted on the capture day. Red Sea traffic kept recovering, with Bab el-Mandeb up 8.9% and Suez up 7.9%, while Bosphorus fell 22.2%. Türkiye Today reports tanker captains earn $100,000 a month to run Hormuz.",
+      "cascadingImpacts": [
+        "Hormuz transits down 13.6% + $100,000 monthly captain pay + attacks on crews → fewer willing crews and higher tanker day rates → delivered crude and LNG cost more even where volumes hold"
+      ],
+      "bullets": [
+        "Week-over-week transits: Bab el-Mandeb +8.9%, Suez +7.9%, Malacca +3.9%, Korea +3.1%, Gibraltar +1.6%, Panama +0.5%, Taiwan +0.3%, Kerch 0%, Cape of Good Hope -0.5%, Lombok -1.2%, Dover -1.9%, Hormuz -13.6%, Bosphorus -22.2%.",
+        "The Dutch government proposes a law to crack down on Russia's shadow fleet; EU urges Bulgaria to help identify those behind Black Sea drone attacks on ships.",
+        "Iron ore ticked up as Chinese mills eye post-holiday restocking (Finimize); Turkish steelmakers face EU quota cuts as CBAM verification bites (S&P Global)."
+      ]
+    },
+    "demographics": {
+      "summary": "Migration deaths and forced labor led. At least 139 people died when a migrant boat from Djibouti to Yemen capsized, with more than 84 missing. Young men in Myanmar fear being seized and sold to the army. Kenya recorded its first Ebola death while WHO tracks the Bundibugyo outbreak in the DRC.",
+      "cascadingImpacts": [
+        "Kenya's first Ebola death + DRC Bundibugyo outbreak → health screening at East African borders → slower trade and labor movement along the Northern Corridor"
+      ],
+      "bullets": [
+        "Djibouti boat disaster: at least 139 dead including children (UN agency). South Africa withdraws an asylum directive after anti-migrant violence.",
+        "Guatemala deportations pass 55,000; Austria moves to ease deportation of foreign prisoners; Myanmar's regime says it will take back migrants from Malaysia as soon as possible; Morocco says its migration model with Spain has hit its limit.",
+        "Labor shortages: Finland struggles to keep skilled foreign workers, Laos steps up efforts on labor gaps, New Zealand First promises shortage-led work visas.",
+        "India's Gen Z protest movement grows as protesters seeking the election chief's ouster are detained."
+      ]
+    },
+    "public_policy": {
+      "summary": "Debt and energy dominated the IMF-World Bank meetings, per France 24. Pakistan imposed emergency rule over Imran Khan's provincial government. The US-Russia diesel deal split the West: Canada condemned it and Germany kept its sanctions push. Brazil's runoff campaign turned on Lula's charge that Meta is interfering.",
+      "cascadingImpacts": [
+        "Energy shock + rising debt at the IMF-World Bank meetings + USD/JPY at 158.35 and rupee hedging curbs → importers defend currencies and cut subsidies → more austerity fights (Hungary, Ireland, Gabon, Pakistan power tariffs)"
+      ],
+      "bullets": [
+        "IMF reaches a staff-level agreement with Zambia and sends Hungary an austerity wish-list; World Bank puts Gabon's debt above 80% of GDP; the Commission says Ireland's budget cuts weaken the EU.",
+        "India's central bank curbs the corporate rush to hedge against rupee weakness; Ghana risks 10% to 100% US tariffs as it moves to join BRICS.",
+        "Polymarket on Oct 12: Bank of Russia holds in October at 89%, Bank of Canada holds at 84%, Brazil Selic unchanged in November at only 9%, Trump meets Putin by Nov 30 at 75%.",
+        "Politics: Slovenia rejects a bill in a blow to PM Jansa's reform agenda; Kickl tables a no-confidence motion in Austria; Guinea-Bissau postpones its transition elections; China sanctions Paraguayan and Belizean ministers over Taiwan ties."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Metals rose: gold $4,220.6 (+1.5% WoW) and copper $6.744/lb (+2.6%). Chile's El Teniente mine partially suspended operations after a fatal landslide, adding to Chilean strike risk. Nickel tilts the other way, with oversupply and Indonesian policy setting the tone.",
+      "cascadingImpacts": [
+        "El Teniente landslide + Chile strike + EU fast-track for KGHM copper → near-term supply loss in Chile, medium-term additions in Europe → copper stays bid while grids and data centers compete for metal"
+      ],
+      "bullets": [
+        "Reuters: El Teniente partially suspends operations after a fatal landslide; Finimize: copper edged higher as Chile's supply risks grew. EU fast-tracks KGHM's $3.46 billion Polish copper projects.",
+        "Nickel: Indonesia weighs a smelter freeze; the EU blocked an MMG nickel deal; a South African gold miner buys into BHP's shuttered Australian nickel assets as oversupply reshapes the market.",
+        "Kazatomprom shareholders approve a major Chinese uranium contract and reject a deal with Russia; USA Rare Earth pursues a $2.8 billion Brazil deal; Côte d'Ivoire leads African exploration as global exploration budgets fall.",
+        "Gold politics: Argentina's central bank and auditors clash over gold reserves; Bolivia's reserves rise 8.7% to $3.93 billion on gold; Myanmar's regime shuts its online gold market."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Brent trades around $100 to $105 while Hormuz sits at 85 Red; ceasefire headlines knock a dollar or two off on the day and fade.",
+        "Ukraine and Russia stay Critical. The energy ceasefire holds in patches at best; Russia struck power plants after Trump announced it.",
+        "Saudi Arabia retaliates in Yemen and the Houthis keep firing at Saudi targets; more airlines suspend Saudi routes.",
+        "The US-Iran ceasefire holds through Oct 31 (Polymarket 79% on Oct 12) without a Hormuz deal (15%). Brazil votes in its Oct 25 runoff."
+      ],
+      "risks": [
+        "Hormuz moves from harassment to a blockade, with mines or a tanker sinking.",
+        "Houthis resume attacks on Red Sea shipping and reverse the Bab el-Mandeb and Suez recovery.",
+        "Ethiopia and Eritrea go to open war after the Adigrat advance.",
+        "Ebola spreads inside Kenya after its first death."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Brent keeps a war premium over WTI; a $11 to $13 spread shows Europe and Asia paying for Hormuz.",
+        "The half-built UAE pipeline around Hormuz matters more for Gulf export security than any round of talks.",
+        "Copper drifts higher on Chilean supply losses while nickel stays oversupplied.",
+        "European defense and hybrid-threat budgets rise on the Tusk plot, Black Sea drone attacks and Belarus border incidents."
+      ],
+      "risks": [
+        "The energy ceasefire collapses and Ukraine resumes refinery strikes, tightening European diesel into winter.",
+        "The US-Russia diesel deal splits G7 sanctions policy, with Germany and Canada pushing back.",
+        "A debt event in an energy-importing borrower such as Gabon, Pakistan or Hungary."
+      ]
+    },
+    "2y": {
+      "base": [
+        "Gulf producers rebuild export routes around Hormuz with pipelines, rail links and storage.",
+        "Minerals policy hardens: Indonesian smelter controls, EU strategic projects, and Chinese uranium contracts lock in supply blocs.",
+        "Air defense stocks stay short; Spain and Greece already refused Ukraine their expiring Patriots.",
+        "Drought and floods hit harvests more often, as Hungary, Nepal and Mexico showed this week."
+      ],
+      "risks": [
+        "Saudi Arabia becomes a direct combatant in a wider Gulf war.",
+        "Northeast Asia heats up: Taiwan, South Korea and Japan scores all rose this week as North Korea tested missiles.",
+        "A cluster of sovereign defaults among fuel importers."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Energy security rests on route diversity, storage and domestic power, from Belgian nuclear to Canadian pipelines.",
+        "Mine safety, labor and permits set copper supply more than ore grades do.",
+        "Migration pressure rises while receiving countries harden enforcement and hire selectively."
+      ],
+      "risks": [
+        "A great-power war that overwhelms every regional scoreboard.",
+        "Durable Gulf and Ukraine settlements that collapse the war premium and make this outlook too hawkish."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Hormuz 85 Red + tankers hit off Oman and Qatar + transits down 13.6% → crew pay and insurance climb → Brent $103.40 holds $13.03 over WTI → energy inflation lands on Europe and Asian importers",
+    "Houthi strikes on Riyadh airport + Pakistani troops in Saudi Arabia + Saudi vow to respond → Saudi-Houthi war widens → Gulf aviation and Bab el-Mandeb risk rise → Asia-Europe freight and air cargo cost more",
+    "Trump energy ceasefire + US-Russia diesel deal + German and Canadian pushback → oil dips on the headline while G7 sanctions unity frays → if Russian strikes continue, Ukraine resumes refinery hits and European diesel tightens again"
+  ]
+}
