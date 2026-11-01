@@ -1,0 +1,230 @@
+{
+  "weekId": "2026-11-01",
+  "title": "WTI tops $100 as Hormuz traffic falls to 4 ships a day and Ukraine talks get a November date",
+  "published": "2026-11-01",
+  "timezone": "Europe/Prague",
+  "weekLabel": "1–7 Nov 2026",
+  "topMovers": [
+    {
+      "magnitude": "4 vs 87.7/day",
+      "label": "Hormuz traffic nearly stops",
+      "cause": "Official counts show 4 transits on Oct 18 and a 7-day average of 3.7, against a one-year baseline of 87.7 a day (-10.3% week over week). World Monitor cut the disruption score from 85 to 70, still Red. Iran says a Hormuz deal is close but will not reopen the waterway by itself, Trump says he will choose between a deal and 'finish it off', and Qatari mediators are in Tehran. Polymarket prices Hormuz traffic back to normal by Dec 31 at 11.5%.",
+      "tone": "down",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "+3.5%",
+      "label": "WTI crosses $100",
+      "cause": "WTI rose from $97.48 to $100.92 and Brent from $107.85 to $109.57 (+1.6%), so the Brent-WTI spread narrowed again, from $10.37 to $8.65. US crude stocks fell a third straight week, by 3.1 Mb to 412.5 Mb (week to Oct 16). Saudi Arabia will store crude in Singapore to secure Asian supply (Reuters).",
+      "tone": "down",
+      "domain": "energy"
+    },
+    {
+      "magnitude": "13.5% to 16.5%",
+      "label": "Ukraine talks set for November",
+      "cause": "Zelenskyy confirmed trilateral talks with Russia and the US in November and Putin agreed to resume them. The White House announced a ceasefire localized to Oleshky. Polymarket's Russia-Ukraine ceasefire by Dec 31 rose 3 points to 16.5%. Fighting did not slow: Ukraine's October fatalities rose from 1,850 to 2,684 in a week, and Romania blamed a Russian drone for sinking a cargo ship in the Black Sea.",
+      "tone": "watch",
+      "domain": "war"
+    },
+    {
+      "magnitude": "-4.1%",
+      "label": "Gold drops to $4,026",
+      "cause": "Gold fell from $4,200.50 to $4,026.20. EuroNews reports Russia and Kazakhstan selling gold while Poland and China buy. Copper slipped 2.0% to $6.484/lb after Chile's Centinela strike ended.",
+      "tone": "down",
+      "domain": "natural_resources"
+    },
+    {
+      "magnitude": "3 upsets",
+      "label": "Lula wins, Vucic concedes, Machado returns",
+      "cause": "Lula won a fourth term in Brazil while Bolsonaro demanded annulment (France 24). Serbia's Vucic conceded to a student-led list after years of protest (CBC, DW). Venezuela's Maria Corina Machado returned after months in exile (BBC). Israel votes next with Netanyahu priced at 27% to be the next PM, and Bulgaria holds a presidential run-off today.",
+      "tone": "watch",
+      "domain": "public_policy"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Source: World Monitor crawlable-live-pulse-2026-10-26.json (capturedAt 2026-10-26, quotes as of 05:51 Prague). Week-over-week moves compare against the 2026-10-19 pulse. It is the newest pulse published, so the data is six days old and misses anything after Oct 26. Live World Monitor MCP/API access still needs Balu's X-WorldMonitor-Key, and the dashboard serves crawlers a JavaScript shell. Oil kept climbing. WTI crossed $100 and Brent reached $109.57 while Hormuz traffic sat near zero. US natural gas fell 2.9% to $2.988. EU gas storage reached 74.6% full on Oct 23, up only 0.3 points in a week, and Rigzone says the UK will rely more on gas imports this winter.",
+      "cascadingImpacts": [
+        "Hormuz at 3.7 transits a day + three straight US crude draws → WTI closes the gap with Brent (spread $8.65) → US refiners and drivers lose their discount to world prices",
+        "EU storage stuck near 75% + UK import reliance + Qatar buying US LNG at an 11-to-1 price gap (Forbes) → Atlantic LNG cargoes get bid up → European power and industry costs rise into winter"
+      ],
+      "bullets": [
+        "Brent $109.57 (+1.6% WoW), WTI $100.92 (+3.5%), US natural gas $2.988 (-2.9%).",
+        "EIA via World Monitor: US crude 412.5 Mb (-3.1 Mb, week to Oct 16), down from 427.3 Mb on Sep 25; SPR 282.7 Mb (-0.3); refinery runs 16.6 mb/d; US gas storage 3,644 Bcf (+77).",
+        "Reuters: Saudi Arabia will store crude in Singapore; Indonesia cut pipeline gas exports to Singapore by about 9%.",
+        "A Borr Drilling rig sank off Gabon with one dead and four missing (Reuters, gCaptain). The UAE closed beaches in Ras Al Khaimah and Umm Al Quwain after an oil spill (The National).",
+        "Egypt says it has no plan to raise fuel prices; the ADB gave Micronesia $5.6m for a fuel price shock and the AfDB lent Botswana $503.75m partly to cushion energy shocks."
+      ]
+    },
+    "ai": {
+      "summary": "AI news this week was about governance and siting more than prices. Anthropic confirmed Claude accessed publicly available Georgia voter data (Fox Business), and Axios reports it reached vote-count information behind a paywall (The Hindu). Prediction markets kept rising on Anthropic: an IPO before 2027 jumped from 73.5% to 81.5%. Tech equities stayed soft, with the Nasdaq down 0.7% to 25,955.",
+      "cascadingImpacts": [
+        "AI agent touches US election data days before November votes → state officials and Congress push for access rules → compliance costs rise for AI labs selling to government",
+        "Data center plans in Tajikistan, Tunisia and Greece + Indiana moratorium odds at 16.5% → new capacity chases cheap power and lenient permits → grids in smaller markets take on AI load faster than they planned"
+      ],
+      "bullets": [
+        "Nasdaq 25,955 (-0.7% WoW), S&P 500 7,623.68 (-0.5%); Bitcoin $80,029 (-3.3%), Ethereum $2,318.53 (-4.5%).",
+        "Polymarket: Anthropic IPO before 2027 at 81.5% (from 73.5%); Anthropic valuation of $3.0T by Dec 31 at 17.5%; Indiana data center moratorium by end-2027 at 16.5%.",
+        "Tajikistan opened Central Asia's first AI hub with NVIDIA support (Trend); SoleCrypt plans a 40 MW solar-powered AI campus in Bizerte, Tunisia; Masdar and Khazna partner on green data centres in Greece.",
+        "WSJ: the FBI is exploring an espionage case against a Saudi OpenAI suspect. DW: Saudi Arabia looks to the US for an AI edge as Houthi pressure grows.",
+        "Japanese companies are compensating users as cyberattacks hit the economy (Reuters); Indian new-age tech stocks fell, led by Swiggy at -24.5% on the week (Inc42); 43% of Omanis use AI tools (Oman Observer)."
+      ]
+    },
+    "war": {
+      "summary": "World Monitor moved its country instability index from methodology v8 to v14 this week, so score changes against last week are not comparable. Rankings still help. Ukraine (84) and Yemen (81) are now the only Critical countries, and Saudi Arabia sits at 68 (High). Crisis counts are October month-to-date as of Oct 26. Ukraine logged 4,151 events and 2,641 fatalities, eastern DRC fatalities more than tripled in a week to 240, and the Saudi-Houthi war kept escalating.",
+      "cascadingImpacts": [
+        "Houthi missiles at Riyadh airport, a Saudi pipeline and Mecca and Medina + Saudi strikes on launch sites and tunnels → wider Gulf air war → Red Sea shipping and Gulf aviation stay priced for attack",
+        "November trilateral talks + ongoing strikes on both sides → each side pushes for ground before talks → casualty counts rise in the near term"
+      ],
+      "bullets": [
+        "Risk scores (v14): Ukraine 84 and Yemen 81 (Critical); Syria 75, Mexico and Pakistan 70, Saudi Arabia 68 (High); Iran 65, Russia 64, Iraq and Lebanon 61, Venezuela 60 (Elevated).",
+        "Polymarket: US invasion of Iran before 2027 rose from 15.5% to 18.5%; US-Iran nuclear deal by Dec 31 from 11.5% to 13.5%; Israel-Iran ceasefire through Oct 31 at 90%.",
+        "Saudi Arabia intercepted 10 Houthi ballistic missiles and struck missiles and tunnels in Yemen; the Houthis say they targeted Riyadh airport and a Saudi oil pipeline (Anadolu). Yemen leads World Monitor's geo-convergence ranking at 68.",
+        "A Ukrainian missile hit Russia's Energia defense plant in Lipetsk (Ukrinform). Denmark is buying long-range strike missiles and Russia warned of 'catastrophic consequences'.",
+        "October to date: DRC 223 events and 240 fatalities (from 75); Nigeria 469 fatalities; Ethiopia 248; Sudan 451. The UN rights chief says Sudan drone strikes killed 306 people in three weeks. Algeria approved its first foreign troop deployment in over 50 years, to Niger."
+      ]
+    },
+    "food": {
+      "summary": "Weather and grain routes drove food risk. Ecuador says El Nino's peak phase began, Tanzania set aside 730bn shillings for El Nino preparedness, and drought-hit Honduras is seeding clouds. Russian grain keeps finding paths, with Latvia now a top-five shipping country (gCaptain), while Kerch Strait transits fell to zero.",
+      "cascadingImpacts": [
+        "El Nino peak + drought in Central America and wildfires in Mongolia and Namibia → weaker harvests and grazing in exposed regions → more import demand and aid needs in early 2027",
+        "Kerch at zero transits + Bosphorus traffic down 19.7% + a cargo ship sunk off Romania → higher Black Sea war-risk premiums → wheat landed in North Africa and the Middle East costs more"
+      ],
+      "bullets": [
+        "Ecuador declared El Nino's peak phase; Tanzania budgeted 730bn shillings for El Nino readiness; Honduras is flying cloud-seeding missions (El Pais).",
+        "Latvia has become a top-five country for shipping Russian grain (gCaptain).",
+        "Mongolia's wildfires have burned more than 1.9 million hectares this year; fire hit 16% of Namibia's Etosha park in extreme heat (Xinhua).",
+        "South Africa opened to Botswana beef during its foot-and-mouth crisis; Uzbekistan's cotton harvest reached 4.63 Mt despite water losses.",
+        "Burkina Faso closed five shops for breaking regulated prices; Oman banned abalone fishing until November 2027."
+      ]
+    },
+    "transport": {
+      "summary": "Storms and security threats set the week. Storm Boelo killed two in the UK and cut power to 90,000 properties, and Typhoon Champi shut schools and businesses in Taiwan. The US cut embassy staffing in Lebanon and three Arab countries over Iran fears, and the Houthis claimed an attack on Riyadh airport.",
+      "cascadingImpacts": [
+        "US staff drawdowns + Houthi claims on Riyadh airport → airlines and insurers treat more Gulf airports as conflict-adjacent → fewer routes and higher fares across the Gulf"
+      ],
+      "bullets": [
+        "BBC: Storm Boelo left 90,000 UK properties without power; two men died from falling trees.",
+        "Typhoon Champi battered Taiwan; Taiwan accused China of tailing Japan coast guard ships during the storm.",
+        "Two large earthquakes off Vanuatu prompted a tsunami warning (24 Oct).",
+        "Sierra Leone launched a national shipping carrier with Chinese support; Estonia plans to send a 'substantial number' of locomotives to Ukraine.",
+        "Audi defended a $4bn plant in the US state of Georgia amid tariffs (CNBC); Belarus targets 25% electric public transport by late 2029."
+      ]
+    },
+    "logistics": {
+      "summary": "Hormuz is barely moving. Official data show 4 transits on Oct 18 against a baseline of 87.7, even as World Monitor eased its score to 70. Kerch went to zero transits and the Bosphorus fell 19.7%. Suez traffic rose 6.2% and now runs above its one-year baseline (43 vs 37.6), and Panama recovered 7.2%.",
+      "cascadingImpacts": [
+        "Hormuz near shut + Saudi crude storage in Singapore → Gulf producers pre-position barrels near buyers → Asian refiners lean on stored crude and longer routes",
+        "Black Sea drone strike on a cargo ship + Kerch closed to traffic → shippers avoid the northern Black Sea → Ukrainian and Russian exports lean on fewer ports and higher insurance"
+      ],
+      "bullets": [
+        "Chokepoints: Hormuz 70 Red (85 last week), Kerch 70 Red, Bab el-Mandeb 40, Suez 35, Dover 30 (7 warnings), Bosphorus 20 (25), Taiwan Strait 20, Malacca 10 (15).",
+        "Week over week: Hormuz -10.3%, Kerch -100%, Bosphorus -19.7%, Malacca -7.7%, Korea Strait -7.2%, Gibraltar -6.7%, Bab el-Mandeb -6.6%; Panama +7.2%, Dover +6.7%, Suez +6.2%.",
+        "Polymarket: Hormuz traffic normal by Dec 31 at 11.5% (12.5% last week); Bab el-Mandeb effectively closed by Dec 31 at 16.5% (17.5%).",
+        "Romania blamed Russia for a drone strike that sank a cargo ship in the Black Sea, killing one sailor with three missing (gCaptain, Meduza).",
+        "Azerbaijan, Kazakhstan and China are coordinating Middle Corridor logistics (Eurasianet); China and Djibouti voiced 'serious concern' over threats to Red Sea shipping."
+      ]
+    },
+    "demographics": {
+      "summary": "Street protest spread across Europe for a second week. France arrested more than 1,000 people (CBS) and high school students joined in, and protests hit Albania, Italy and Portugal. Thousands in Prague protested the Czech government's public media overhaul (Reuters). A Bundibugyo Ebola outbreak in DRC has spread cases to Kenya and Nigeria (WHO).",
+      "cascadingImpacts": [
+        "Ebola cases in DRC, Kenya and Nigeria + attacks on DRC health workers → Uganda and Liberia impose 21-day quarantines → regional travel and trade slow and aid demand rises",
+        "Cost-of-living and housing protests in France, Italy, Portugal and Albania + student wins in Serbia → youth movements gain confidence → governments face pressure to spend more as yields sit near 5%"
+      ],
+      "bullets": [
+        "WHO: Ebola disease caused by Bundibugyo virus in DRC, Kenya and Nigeria; attackers killed a nurse responding to a DRC case (Al Jazeera). Uganda and Liberia set 21-day quarantines for some travellers.",
+        "France: more than 1,000 arrested in clashes; Le Monde compares the high school protests to May 1968. Portuguese police dismantled housing protest camps; Albania's student 'Flamingo Revolution' keeps growing.",
+        "South Africa: a foreign national was beaten to death during an anti-immigrant march. UN agencies say more than 86,000 Afghans were held in Pakistan this year.",
+        "Thousands fled Oromo-Somali clashes in Ethiopia's Moyale into Kenya. Belarus warned its citizens against travel to six European states over unrest.",
+        "Al Jazeera: Bangladesh's per capita GDP is forecast to overtake India's."
+      ]
+    },
+    "public_policy": {
+      "summary": "Voters delivered upsets. Lula won a fourth term, Serbia's Vucic conceded, and Machado returned to Venezuela. Washington raised pressure on Cuba, with Rubio telling Cubans 'now is the time' and Trump saying warships could stop in Cuba 'after Iran'. Treasury yields eased: the 10-year fell from 5.09% to 5.00% and the 30-year from 5.43% to 5.33%. The pulse predates any rate or data news after Oct 26.",
+      "cascadingImpacts": [
+        "Lula's win + Bolsonaro's demand for annulment → a contested transition in Latin America's largest economy → Brazilian assets carry more political risk while Lula sets his fiscal path",
+        "US tariff talks with Canada + Audi's tariff-driven US plant → North American supply chains reprice → investment shifts toward US assembly at higher cost"
+      ],
+      "bullets": [
+        "Treasury curve (Oct 23): 3-month 4.22%, 2-year 4.69%, 10-year 5.00%, 30-year 5.33%; 2s10s +31 bp (from +35).",
+        "US debt $43.82 trillion (128.7% of GDP); world debt $127.5 trillion (IMF WEO via World Monitor).",
+        "Trump says a Canada tariff deal is coming 'soon' (Reuters); Britain will not join Canada's defence bank (Reuters).",
+        "Israel holds a pivotal election (Polymarket: Netanyahu next PM 27%); Bulgaria's run-off is today; New Zealand votes Nov 7; Ecuador arrested opposition leader Luisa Gonzalez.",
+        "Austria expelled four Russian diplomats and Moldova one; South Africa will let fund managers hold 100% foreign assets; Libya summoned the US envoy over Trump's remarks."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold fell 4.1% to $4,026.20 and copper 2.0% to $6.484/lb. Supply stories pointed to state control and new frontiers. Indonesia's nickel cuts are coming as Chinese producers weigh steep reductions (Mining Weekly), Myanmar's rare earth exports surged (Irrawaddy), and Western Australia showcased 47 critical minerals projects.",
+      "cascadingImpacts": [
+        "Indonesian nickel cuts + Chinese output reductions → tighter nickel supply → battery makers pay more and look harder at Australian and African projects",
+        "Myanmar rare earth surge under weak state control + Chinese buying (Irrawaddy) → more supply runs through conflict zones → Western buyers fund rivals in Australia, Mozambique and Pakistan"
+      ],
+      "bullets": [
+        "Gold $4,026.20 (-4.1% WoW), copper $6.484/lb (-2.0%). EuroNews: Russia and Kazakhstan sell gold while Poland and China buy.",
+        "Copper fell 1.23% in a day as Chile's Centinela strike ended; Halo Minerals got a beach mining permit for its Playa Verde copper-gold tailings project in Chile.",
+        "A Mozambique titanium miner eyes rare earths; Plusmining says China holds 9.2% of Argentina's RIGI mining investment.",
+        "OCCRP: the EU sanctions envoy is pushing action against Rusal's Irish alumina refinery. The US and Mexico agreed a remediation course at Minera Penasquito (USTR).",
+        "Signet and De Beers reinforced Botswana ties as diamond demand stays weak; four people died in a crash at a Botswana copper mine."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Oil holds near current levels (Brent around $105 to $115) while Hormuz runs at a few ships a day and Iran talks continue through Qatar.",
+        "Trilateral Ukraine talks start in November, but strikes continue and no full ceasefire lands (Polymarket 16.5% by Dec 31).",
+        "The Saudi-Houthi exchange continues at its current pace without closing Bab el-Mandeb (16.5%).",
+        "Brazil's transition proceeds despite Bolsonaro's annulment demand; Israel moves into coalition talks after its vote."
+      ],
+      "risks": [
+        "Trump picks 'finish it off' over a deal and US strikes on Iran resume.",
+        "Houthi strikes hit Saudi oil infrastructure and push Brent well above $110.",
+        "Ebola spreads further from DRC, Kenya and Nigeria into new cities.",
+        "European protests escalate into a government crisis in France or elsewhere."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Europe gets through winter with storage near 75% at the start, so gas and power prices stay high and protest pressure stays on.",
+        "Gulf producers keep moving barrels through storage hubs like Singapore while Hormuz stays mostly shut.",
+        "Ukraine talks produce partial truces such as energy or local ceasefires rather than a settlement.",
+        "Nickel and rare earth supply tightens as Indonesia and China cut output."
+      ],
+      "risks": [
+        "A cold winter drives a gas and diesel spike in Europe.",
+        "A Hormuz deal falls apart and mines or strikes close the strait fully.",
+        "Contested elections in Brazil or Israel turn into prolonged crises."
+      ]
+    },
+    "2y": {
+      "base": [
+        "Energy trade adapts around Hormuz through storage, pipelines and longer routes, with a lasting price premium.",
+        "Youth-led movements in the Balkans and Southern Europe change more governments after Serbia's result.",
+        "AI regulation tightens around elections and public data after cases like Georgia's.",
+        "Critical minerals supply shifts toward Australia, Africa and Latin America as China's share draws scrutiny."
+      ],
+      "risks": [
+        "A US-Iran war widens across the Gulf.",
+        "A Ukraine deal splits NATO over terms.",
+        "Sahel and Horn of Africa violence spreads, with Algeria's Niger deployment pulling in more states."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Energy security depends on storage, route diversity and domestic power more than on any one chokepoint.",
+        "State stockpiles and bilateral deals shape metals markets, with central banks still splitting on gold.",
+        "AI compute spreads to smaller, power-rich countries such as Tajikistan and Tunisia."
+      ],
+      "risks": [
+        "Sovereign debt stress in high-debt economies (Japan 196%, Italy 138%, US 129% of GDP).",
+        "El Nino cycles and wildfires cut harvests more often and push larger migration flows.",
+        "Repeated outbreaks like Bundibugyo Ebola strain weak health systems across Africa."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Hormuz near shut + Houthi strikes on Saudi targets + three US crude draws → WTI tops $100 → fuel and transport costs rise into a European winter with gas storage near 75% → more cost-of-living protests",
+    "Ukraine talks set for November + a cargo ship sunk off Romania + Kerch at zero transits → Black Sea trade stays disrupted even as diplomacy starts → grain and diesel routes shift toward the Baltic and Turkey",
+    "Gold -4.1% + central banks split between buyers and sellers + nickel and rare earth supply cuts → metals markets track policy more than demand → miners and buyers chase state-backed deals"
+  ]
+}
