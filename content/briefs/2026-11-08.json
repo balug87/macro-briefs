@@ -1,0 +1,231 @@
+{
+  "weekId": "2026-11-08",
+  "title": "Iran joins the Critical tier as Hormuz drops to 2 ships a day and gold breaks below $4,000",
+  "published": "2026-11-08",
+  "timezone": "Europe/Prague",
+  "weekLabel": "8–14 Nov 2026",
+  "topMovers": [
+    {
+      "magnitude": "65 to 86",
+      "label": "Iran turns Critical",
+      "cause": "World Monitor's instability score for Iran jumped 21 points to 86 (Critical), with Syria up 20 to 95 and Iraq up 15 to 76, as Qatari mediators held a third day of talks to end the US-Iran war and Trump said it would be put away 'one way or the other' (CBS). Polymarket prices Iran targeting Saudi Arabia by Nov 30 at 31%.",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "3.3 vs 88.1/day",
+      "label": "Hormuz down to 2 ships",
+      "cause": "Official counts show 2 transits on Oct 25 and a 7-day average of 3.3 against a one-year baseline of 88.1 (-11.5% week over week), and a Pakistan LNG cargo cleared by Iran was attacked near the strait (Bloomberg, gCaptain). Brent ended the week at $110.03 (+0.4%) after sliding 3% on Nov 2 when Trump signalled more time for diplomacy (The National).",
+      "tone": "down",
+      "domain": "logistics"
+    },
+    {
+      "magnitude": "16.5% to 13.5%",
+      "label": "Kherson truce ends",
+      "cause": "The localized Oleshky ceasefire ended, Russian strikes cut power to thousands (BBC), and Sky News reports Russia used the pause to reinforce troops around the city. Polymarket's Russia-Ukraine ceasefire by Dec 31 gave back last week's 3-point gain, and a Greek cargo ship sank after a drone strike off Bulgaria (Daily Sabah).",
+      "tone": "down",
+      "domain": "war"
+    },
+    {
+      "magnitude": "-2.9%",
+      "label": "Gold breaks below $4,000",
+      "cause": "Gold fell from $4,026.20 to $3,910.50, down 6.9% in two weeks from $4,200.50, while copper held at $6.507/lb (+0.4%). Glencore's cobalt output sank 52% under DRC export quotas (Mining.com).",
+      "tone": "down",
+      "domain": "natural_resources"
+    },
+    {
+      "magnitude": "-2.0%",
+      "label": "AI rout hits Asia tech",
+      "cause": "The Nasdaq fell to 25,437 and foreigners pulled a record sum from Taiwan stocks on the AI selloff (Bloomberg), while Japanese tech slid on Kioxia's outlook. Money kept flowing into AI build-outs anyway: Aramco took 49% of HUMAIN for $2.6bn and South Korea nearly doubled its 2027 AI and chips budget to $15.97bn.",
+      "tone": "down",
+      "domain": "ai"
+    }
+  ],
+  "domains": {
+    "energy": {
+      "summary": "Source: World Monitor crawlable-live-pulse-2026-11-02.json (capturedAt 2026-11-02, quotes as of 05:37 Prague time), compared with the 2026-10-26 pulse. It is the newest pulse published, so the data is six days old and misses the Nov 3 US midterms and everything after. Live World Monitor MCP/API access still needs Balu's X-WorldMonitor-Key, and the dashboard serves crawlers a JavaScript shell. Oil went flat at a high level. Brent rose 0.4% to $110.03 and WTI slipped to $100.83, so the spread widened back to $9.20. US crude stocks fell a fourth straight week. Europe's gas cushion barely grew: EU storage hit 74.7% on Oct 30, up 0.1 points in a week, and Germany missed its storage target at a record low (FT, Reuters).",
+      "cascadingImpacts": [
+        "Hormuz at 3.3 transits a day + an attack on an Iran-cleared Pakistan LNG cargo → Asian buyers stop trusting Gulf LNG → Japan signs $21bn of gas deals (FT) and bids up Atlantic cargoes",
+        "German storage at a record low + EU fill stuck near 75% → less buffer for a cold snap → European power and industrial costs stay high into winter"
+      ],
+      "bullets": [
+        "Brent $110.03 (+0.4% WoW), WTI $100.83 (-0.1%), US natural gas $2.904 (-2.8%). Both crude benchmarks fell about 3% on the capture day as Iran talks continued.",
+        "EIA via World Monitor: US crude 410.6 Mb (-1.9 Mb, week to Oct 23), the fourth straight draw and down 16.7 Mb since Sep 25; SPR 282.6 Mb; refinery runs 16.5 mb/d; US gas storage 3,724 Bcf (+80).",
+        "Polymarket prices the IEA asking Germany to release oil stocks by Dec 31 at 17%.",
+        "Fuel-price relief spreads: Vietnam cut its fuel tax to zero, and a cruise line cancelled a world trip over fuel costs, stranding 200 passengers in Cambodia (ABC).",
+        "Nuclear and gas supply deals: Korea signed an $18bn nuclear export deal with the Czech Republic; Russia will back a 2,000 MW plant in Ghana (Reuters); Bangladesh's nuclear plant got a generation nod; a Norwegian appraisal well suggests Afrodite gas volumes may be more than double prior estimates."
+      ]
+    },
+    "ai": {
+      "summary": "AI equities sold off while capital spending kept rising. The Nasdaq lost 2.0% to 25,437, Taiwan saw a record foreign withdrawal on the 'AI rout', and Japanese stocks fell on Kioxia. Gulf and Korean money moved the other way. Aramco bought 49% of HUMAIN from PIF for $2.6bn, Snowflake committed $300m to Saudi Arabia through 2030, and Seoul nearly doubled its 2027 AI budget. Sam Altman made a surprise visit to South Korea to deepen chip partnerships (CNBC).",
+      "cascadingImpacts": [
+        "US export controls + cheap Gulf and Southeast Asian power → data centers serving Chinese AI cluster in Asia (The Wire China) → enforcement shifts from chips to where compute sits",
+        "Record foreign outflow from Taiwan + Korea's $15.97bn budget → state money props up the chip supply chain while private investors pull back → AI capacity concentrates where governments pay for it"
+      ],
+      "bullets": [
+        "Nasdaq 25,437 (-2.0% WoW), S&P 500 7,580.07 (-0.6%); Bitcoin $78,482 (-1.9%), Ethereum $2,301.29 (-0.7%). CNN Fear and Greed reads 26 (Fear), World Monitor's composite 57.2 (Neutral), VIX 19.42.",
+        "Polymarket: Anthropic valuation of $3.0T by Dec 31 at 19.5% (from 17.5%); Indiana data center moratorium by end-2027 at 18% (16.5%); the OpenAI spy case accused of working for Saudi Arabia at 30%.",
+        "The FBI tied North Korea's TraderTraitor group to a $6.43bn Binance heist, the largest crypto hack on record. Belgium's tax portal went dark after a cyberattack and Moldova called a top security meeting over a 'giant' attack.",
+        "Infineon is investing €1.1bn in chips in Villach, Austria. Tencent Cloud partnered with Saudi AI infrastructure firm OmniOps.",
+        "AI safety moves to smaller states: Barbados will host an AI safety summit and Eswatini is setting up an African AI standards centre. Brazilian lawyers were caught hiding a prompt injection in a court filing (Tom's Hardware)."
+      ]
+    },
+    "war": {
+      "summary": "Both pulses use country index methodology v14, so scores compare on paper this week. The moves were large: Iran +21 to 86, Syria +20 to 95, Iraq +15 to 76, Yemen +8 to 89, Russia +7 to 71 and Lebanon +7 to 68. World Monitor's own daily trend field shows only 1 to 2 point moves for these countries, so part of the jump may be recalibration rather than a week of events. Four countries now sit in Critical: Syria, Yemen, Ukraine (87) and Iran. Saudi Arabia fell 5 to 63. October crisis counts, now nearly complete, rose sharply in Sudan and Ukraine.",
+      "cascadingImpacts": [
+        "Qatar-led talks + Trump's 'one way or the other' + Iran's army warning of a longer war → Gulf states brace for strikes on their soil (31% odds for Saudi by Nov 30) → Gulf energy and aviation stay priced for attack",
+        "Oleshky truce used to reinforce (Sky News) + a second ship sunk in the western Black Sea → local ceasefires lose credibility → November talks start from a weaker base"
+      ],
+      "bullets": [
+        "Risk scores (v14): Syria 95, Yemen 89, Ukraine 87, Iran 86 (Critical); Iraq 76, Russia 71, Pakistan and Mexico 70, Lebanon 68 (High); Saudi Arabia 63, Venezuela, Myanmar, North Korea and Afghanistan 60 (Elevated).",
+        "October month to date (Nov 2 vs Oct 26): Ukraine war 7,809 events and 3,802 fatalities (from 2,684); Yemen 3,412 fatalities; Sudan 1,048 (from 451); Nigeria 702 (469); Ethiopia 431; Myanmar 532 (344); Gaza 126 (77); Haiti 71 (21).",
+        "UCDP September deaths: Ukraine 6,202, Yemen 2,892, Pakistan 646 (TTP), Ethiopia 563, Somalia 191, Mali 178.",
+        "Polymarket: US invasion of Iran before 2027 at 17.5% (18.5%); US-Iran nuclear deal 13.5% (flat); Mojtaba Khamenei head of state at year-end 85.2%; NATO-Russia clash by Dec 31 at 12.5%.",
+        "Sudan accuses Ethiopia of launching 162 drone attacks from its territory, and Ethiopia bought Russian fighter jets amid war in Tigray. Venezuela's army killed at least 19 in an attack on a Colombian rebel camp. The US embassy in Moscow warned of a possible 'mass casualty event'. Russia and North Korea tested missiles in the Western Pacific (USNI)."
+      ]
+    },
+    "food": {
+      "summary": "El Nino moved from forecast to emergency. Bolivia declared an El Nino emergency, Papua New Guinea calls its drought a national crisis as rivers dry and farms fail (Guardian), and Malawi's herders walk farther for water. The UN says hunger is deepening for millions in DRC. Black Sea grain risk rose again after a Greek cargo ship sank off Bulgaria, though Bosphorus traffic recovered 15.3%.",
+      "cascadingImpacts": [
+        "El Nino emergencies in Bolivia and PNG + drought in Malawi + Peru flagging 58 mine waste sites → crop losses and contaminated water in exposed regions → aid and import demand rise in early 2027",
+        "Two ships sunk in the western Black Sea in two weeks + Kerch at zero transits → higher war-risk insurance on grain runs → North African and Middle East wheat buyers pay more per tonne"
+      ],
+      "bullets": [
+        "Bolivia declared an emergency on Oct 31 as El Nino intensifies (DW); PNG drought is a 'national crisis' (Guardian); Malawi cattle farmers travel farther as drought worsens (Al Jazeera).",
+        "Zimbabwe expects a bumper wheat harvest; Nicaragua's coffee exports hit $691m; Kyrgyzstan disbursed $144m in agricultural loans.",
+        "UN News: DRC hunger deepens amid conflict, Ebola and climate shocks; Haiti is in a hunger emergency.",
+        "Afghanistan's opium production jumped fivefold as farmers work around the Taliban ban (UN News). Ethnic clashes over water killed 25 in western Chad.",
+        "Barbados' food import bill reached nearly $1bn; Indonesia's October inflation eased to 3.23%."
+      ]
+    },
+    "transport": {
+      "summary": "Accidents and disease controls dominated. A train crash in Spain killed dozens, including four Americans (CBS), a jet crash in Florida killed nine (WSJ), and an EUFOR helicopter crash in Bosnia killed four Italian soldiers. Ebola fear started to reshape travel: Saudi Arabia suspended Kenyan visas and the Dominican Republic added an Ebola form for US flights from Nov 3.",
+      "cascadingImpacts": [
+        "Ebola deaths in DRC + Saudi visa ban on Kenya + new entry forms in the Caribbean → more countries add screening → East African air travel and labour migration slow",
+        "Fuel near $110 Brent + a cruise cancelled over fuel costs → leisure operators cut long itineraries → tourism-dependent ports lose calls"
+      ],
+      "bullets": [
+        "Spain's train crash killed dozens, including citizens of the US, Japan and Canada (Guardian).",
+        "A glacial lake burst in Bhutan washed away roads and bridges and put Bengal and Assam on flood alert; Greece and western Turkey had severe rain warnings; Belize declared a state of emergency in parts of two districts.",
+        "Royal Caribbean extended its Haiti suspension to 2028. Eurostar delays hit Belgium, Germany and the Netherlands on Nov 1.",
+        "Vanuatu had a M6.0 quake and expects up to five cyclones this season.",
+        "Modelling of Norwegian routes found battery bulk carriers beat hydrogen ones (CleanTechnica)."
+      ]
+    },
+    "logistics": {
+      "summary": "Hormuz fell further, to 2 transits on Oct 25 and a 7-day average of 3.3 against 88.1. World Monitor held its score at 70 (Red). Elsewhere the map eased slightly. Taiwan Strait traffic fell 16.4% but its score dropped to 15 (Green), Malacca improved to 5, and Bab el-Mandeb rose 9.2%. Dover traffic dropped 26.4% with 7 warnings and high congestion.",
+      "cascadingImpacts": [
+        "Hormuz near shut + attacks on Iran-approved cargoes → even permitted transits carry risk → Gulf exports keep shifting to pipelines, storage hubs and longer routes",
+        "Red Sea bunkering restarts in Djibouti + Bab el-Mandeb up 9.2% + closure odds down to 13.5% → some carriers test the Red Sea again → Suez stays above its baseline"
+      ],
+      "bullets": [
+        "Chokepoints: Hormuz 70 Red, Kerch 70 Red, Bab el-Mandeb 40, Suez 35, Dover 30 (7 warnings), Bosphorus 20, Taiwan Strait 15 (from 20), Cape of Good Hope and Gibraltar 15, Malacca 5 (from 10).",
+        "Week over week (official counts to Oct 25): Dover -26.4%, Taiwan Strait -16.4%, Hormuz -11.5%, Suez -6.8%, Gibraltar -6.4%; Bosphorus +15.3%, Bab el-Mandeb +9.2%, Malacca +6.0%, Panama +3.6%. Kerch stayed at zero.",
+        "Polymarket: Hormuz traffic normal by Dec 31 at 11.5% (flat); Bab el-Mandeb effectively closed by Dec 31 at 13.5% (from 16.5%).",
+        "Red Sea Bunkering restarted VLSFO supply in Djibouti (Hellenic Shipping News). Somali pirates hijacked an Iranian fishing vessel (Maritime Executive). The Panama Canal revised its transit booking system.",
+        "Tanzania and Angola agreed to link the TAZARA and Benguela railways through Zambia and DRC, joining the Indian and Atlantic oceans. Tesla and Samsung oppose new US tariffs on Vietnam as a probe deadline nears (Reuters)."
+      ]
+    },
+    "demographics": {
+      "summary": "Youth protest reached Germany. Tens of thousands joined Gen Z protests that turned violent, with rioters damaging stores in Frankfurt (Washington Post, CBC). Hundreds of thousands marched in France, where an officer was hit by a Molotov cocktail, and Italy had mass protests during a nationwide strike. In DRC, the BBC reports more than 5,000 deaths in the country's deadliest Ebola outbreak, even as one centre discharged its last patients.",
+      "cascadingImpacts": [
+        "Protests in Germany, France, Italy, Portugal and Albania + a high energy bill heading into winter → governments face pressure to subsidise energy and housing → deficits widen with 10-year US yields near 5% setting the global price of debt",
+        "Ebola in DRC + 418 dengue deaths in Bangladesh in October + Covid's first spread in the Marshall Islands → health systems stretch → travel bans and screening widen"
+      ],
+      "bullets": [
+        "Germany: violent Gen Z protests, ministers pledge tough action. France: attempted murder probe after a petrol bomb hit police. Portugal: police stormed housing camps in Lisbon and Porto, 13 arrested. Albania: protesters attacked the Council of Ministers and Rama refuses to resign.",
+        "Bangladesh exporters report disruptions at 529 garment factories amid wage protests; thousands joined an Indian opposition protest demanding the poll chief resign.",
+        "Displacement: insurgency has displaced over 1 million in northern Mozambique; the UN counts 300,000 displaced in Lebanon; 27 Ugandans recruited by Russia are killed or presumed dead in Ukraine.",
+        "Bangladesh recorded its deadliest dengue month with 418 deaths. Croatia reported 25 West Nile cases.",
+        "Labour markets soften at Europe's edge: Finland's unemployment is the EU's worst and Lithuania's economy shrank 1% in Q3. Ireland is welcoming Americans who leave the US (France 24)."
+      ]
+    },
+    "public_policy": {
+      "summary": "Europe's political map kept shifting. Bulgaria elected its first female president (Al Jazeera) after acting President Yotova led run-off exit polls; RT called the winner a critic of Ukraine aid. Serbia's leaderless student movement is set to govern (FT), and Poland's prime minister and president clashed over the constitutional court. Treasury yields fell and the curve steepened: the 10-year dropped from 5.00% to 4.94% and the 2-year from 4.69% to 4.56%. The pulse closes before the Nov 3 US midterms, so it has no results.",
+      "cascadingImpacts": [
+        "2-year yield down 13 bp + Polymarket at only 27.5% for no Fed change in December → markets price cuts → dollar weakness is limited because Japan's yen hit 157.96 and Tokyo warns it may act",
+        "A Ukraine aid critic winning in Bulgaria + Hungary's new government + Serbia's new movement → EU consensus on Ukraine and Russia becomes harder to read → sanctions and aid votes slow"
+      ],
+      "bullets": [
+        "Treasury curve (Oct 30): 3-month 4.16%, 2-year 4.56%, 10-year 4.94%, 30-year 5.31%; 2s10s +38 bp (from +31).",
+        "US debt $43.87 trillion (128.7% of GDP); world debt $127.65 trillion (IMF WEO via World Monitor). EUR/USD 1.1177 (-0.4%), USD/JPY 157.96 (+0.7%).",
+        "Central banks split: Australia is tipped for a fifth hike as home prices fall a seventh month; the BOJ held and said its 2% inflation target is generally met.",
+        "Polymarket: Republicans lose all seven tossup Senate seats 31.5% (resolved after capture); Netanyahu out by end-2026 20.5%; new US sanctions on China by Nov 30 31%; a Moody's or S&P downgrade of France by Nov 30 15%.",
+        "Trump says the US and Canada have the 'concept' of a trade deal (Reuters). Côte d'Ivoire and Monaco left the FATF grey list; Myanmar stays blacklisted. The UN ended its 35-year Western Sahara mission and closed its Somalia political mission. New Zealand voted Nov 7."
+      ]
+    },
+    "natural_resources": {
+      "summary": "Gold fell below $4,000 for the first time in this series, down 2.9% to $3,910.50, while copper steadied at $6.507/lb. Supply control kept tightening at the state level. DRC export quotas cut Glencore's cobalt output 52%, Indonesia set its 2026 nickel ore quota near 300 Mt and coal near 700 Mt, and a Brazilian court ruling hit Sigma Lithium's shares.",
+      "cascadingImpacts": [
+        "DRC cobalt quotas + Indonesian nickel ore quotas → producer states ration battery metals → battery makers pay more and fund projects in Australia, Malaysia and Africa",
+        "Russia mapping Mali's geology + courting Sierra Leone + Trump eyeing Myanmar rare earths → minerals diplomacy runs through fragile states → supply carries more political risk"
+      ],
+      "bullets": [
+        "Gold $3,910.50 (-2.9% WoW, -6.9% in two weeks); copper $6.507/lb (+0.4%).",
+        "Glencore cobalt output -52% under DRC quotas (Mining.com); Indonesia's HMA nickel benchmark fell again in early November (SMM).",
+        "Sigma Lithium says operations continue despite a Brazilian court ruling; Global Lithium started early works at Manna in Australia; Japan's Sojitz will import yttrium from Malaysia (Nikkei Asia).",
+        "A Russian state firm will build Mali's geological map and mining data system; a Mali gold mine yielded just 31,800 ounces; Guinea holds 34% of world bauxite; Zeus Resources bought 51% of a Mauritania mine.",
+        "Mining tech and equipment: Liebherr added an R 9350 fleet in Zimbabwe; Bloomberg flags China's 5,000-ton digging machines as a trade-war risk for India. Peru flagged 58 mine waste sites at risk from El Nino."
+      ]
+    }
+  },
+  "outlooks": {
+    "1m": {
+      "base": [
+        "Qatar-led talks drag on and Hormuz stays at a few ships a day; Brent trades around $100 to $115.",
+        "Ukraine talks begin in November without a ceasefire (Polymarket 13.5% by Dec 31), and strikes on power grids increase into winter.",
+        "European protests continue at weekends without bringing down a government.",
+        "US markets digest the midterm result and price a December Fed cut."
+      ],
+      "risks": [
+        "Talks fail and US strikes on Iran resume, with Iran hitting Saudi or Gulf targets (31% by Nov 30 for Saudi).",
+        "A third Black Sea sinking pushes insurers to pull cover for grain runs.",
+        "Ebola spreads beyond DRC through East African travel hubs.",
+        "The AI equity selloff deepens and drags broader credit."
+      ]
+    },
+    "6m": {
+      "base": [
+        "Europe gets through winter on thin storage, with Germany the weak link and prices staying high.",
+        "Gulf energy keeps routing around Hormuz, and Asian buyers like Japan lock in long-term LNG from other suppliers.",
+        "El Nino cuts harvests in the Andes, PNG and southern Africa and raises food aid needs.",
+        "Gulf and Korean state money keeps funding AI infrastructure even if listed AI stocks stay weak."
+      ],
+      "risks": [
+        "A cold winter forces gas rationing or oil-stock releases in Germany (17% odds of an IEA call by Dec 31).",
+        "A regional US-Iran war closes Hormuz fully and spreads to Bab el-Mandeb.",
+        "A France downgrade or protest-driven budget crisis spills into euro-area bond markets."
+      ]
+    },
+    "2y": {
+      "base": [
+        "Energy trade settles into a Hormuz-avoiding pattern with a lasting price premium and more Asian stockpiling.",
+        "Producer states like DRC and Indonesia keep using quotas, and battery metals stay a policy market.",
+        "Youth-led movements reshape more governments in the Balkans and Central Europe after Serbia, Hungary and Bulgaria.",
+        "Nuclear build-outs speed up, with Korean, Russian and Chinese vendors competing for deals like the Czech and Ghanaian ones."
+      ],
+      "risks": [
+        "Iran's leadership transition turns violent and the Gulf conflict widens.",
+        "A Ukraine settlement splits the EU over terms and sanctions relief.",
+        "Sahel, Sudan and Horn of Africa wars merge into a wider regional conflict."
+      ]
+    },
+    "5y": {
+      "base": [
+        "Energy security rests on storage, route diversity, nuclear and domestic power more than any single chokepoint.",
+        "AI compute concentrates where states pay for power and chips: the Gulf, Korea and Southeast Asia.",
+        "Metals supply runs through state-to-state deals, with central banks still split on gold."
+      ],
+      "risks": [
+        "Debt stress in high-debt economies (Japan 196%, Italy 138%, US 129% of GDP) with long yields above 5%.",
+        "More frequent El Nino cycles cut harvests and push migration from the Andes, Central America and southern Africa.",
+        "Repeated outbreaks like DRC's Ebola overwhelm weak health systems and normalise travel screening."
+      ]
+    }
+  },
+  "cascadingImpacts": [
+    "Iran scored Critical + Hormuz at 3.3 ships a day + an attack on an Iran-cleared LNG cargo → Asian buyers lock in non-Gulf gas (Japan's $21bn spree) → Europe competes for the same cargoes with storage at 74.7% and Germany at a record low",
+    "Kherson truce ends + a second ship sunk in the western Black Sea + ceasefire odds down to 13.5% → Black Sea trade stays disrupted into winter → grain and fuel costs feed the cost-of-living anger driving protests in Germany, France and Italy",
+    "Gold below $4,000 + DRC cobalt and Indonesian nickel quotas + an AI equity selloff → investors rotate out of crowded trades while states tighten control of physical supply → metals prices track policy more than demand"
+  ]
+}
